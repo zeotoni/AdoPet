@@ -1,0 +1,134 @@
+@media screen and (max-width: 360px) {
+
+    /* ....Tela Inicial..... */
+
+
+    body {
+        background-color: #3772FF;
+    }
+    
+    .cabecalho {
+        padding: 64px;
+    }
+    
+    .cabecalho__vetor1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    .cabecalho__vetor4 {
+        position: absolute;
+        left: -0.5px;
+        top: 0px;
+    }
+
+    .cabecalho-patas {
+        position: absolute;
+        left: 225px;
+        top: 0px;
+    }
+
+    .icone-home {
+        position: absolute;
+        top: 48px;
+        left: 48px;
+    }
+    
+    .icone-mensagem {
+        position: absolute;
+        top: 50.14px;
+        left: 125.81px;
+    }
+
+    .logo-inicial {
+        position: absolute;
+        width: 186.67px;
+        height: 46px;
+        left: 87px;
+        top: 168px;
+    }
+
+    .titulo-inicial {
+        position: absolute;
+        font-weight: 500;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 26px;
+        text-align: center;
+        left: 102px;
+        top: 248px;
+        color: #FFFFFF;
+    }
+
+    .texto-inicial {
+        position: absolute;
+        width: 236px;
+        height: 72px;
+        left: 62px;
+        top: 300px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .forma2 {
+        position: absolute;
+        width: 84.03px;
+        height: 415px;
+        left: 290.7px;
+        top: 199px;
+    }
+
+    .secao-login {
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .botao__login {
+        position: absolute;
+        width: 180px;
+        height: 40px;
+        left: 90px;
+        top: 398px;
+        
+    }
+
+    .botao__cadastro {
+        position: absolute;
+        width: 180px;
+        height: 40px;
+        left: 90px;
+        top: 454px;
+    }
+
+    .ilustracao-inicial {
+        position: absolute;
+        left: 42px;
+        top: 535px;
+    }
+    
+    
+    /* .icone-perfil {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 283px;
+        top: 40px;
+
+    } */
+
+    .rodape {
+        position: absolute;
+        width: 360px;
+        background-color: #36D6AD;
+        text-align: center;
+        padding: 40px 0;
+        color: #FFFFFF;
+        top: 813px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
