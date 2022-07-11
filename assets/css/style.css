@@ -127,17 +127,16 @@
     .form-container {
         margin: 0 auto 24px auto;
         width: 312px;
-        left: 24px;
         background: #F7F7F7;
         border-radius: 10px;
         box-sizing: border-box;
     }
 
-    .formulario-mensagem {
+    .form {
         padding: 17px 16px;
     }
 
-    .formulario-mensagem label{
+    .form label{
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
@@ -147,7 +146,7 @@
         padding: 15px 0 10px 0;
     }
 
-    .formulario-mensagem input {
+    .form input {
         box-sizing: border-box;
         width: 280px;
         height: 48px;
@@ -159,7 +158,7 @@
         padding-left: 10px;
     }
  
-    .formulario-mensagem ::placeholder {
+    .form ::placeholder {
         color: #BCBCBC;
         font-weight: 400;
         font-size: 14px;
@@ -190,5 +189,61 @@
         width: 148px;
         height: 40px;
     }
+
+    /* .....Página perfil...... */
+
+    .texto-perfil {
+        width: 247px;
+        margin: 0 auto;
+        padding: 48px 0 24px 0;
+        height: 60px;
+        color: #3772FF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .titulo__perfil {
+        text-align: center;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 24px;
+        color: #737380;
+    }
+
+    .input-foto {
+        text-align: center;
+    }
+
+    .input-foto input[type="file"] {
+        display: none;
+    }
+
+    #label-foto__perfil {
+        padding: 0;
+    }
+
+    .personal-figure {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        left: 78px;
+    }
+
+    .foto-perfil {
+        box-sizing: border-box;
+        border-radius: 100%;
+        border: 2px solid transparent;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+        transition: all ease-in-out .3s;
+    }
     
+    .foto-perfil__alterar {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        color: #FC7071;
+    }
 }
