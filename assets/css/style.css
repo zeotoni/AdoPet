@@ -2,25 +2,41 @@
 
     /* ....Tela Inicial..... */
 
-
-    body {
+    .container-background {
         background-color: #3772FF;
     }
-    
-    .cabecalho {
-        padding: 64px;
+
+
+    .cabecalho__menu {
+        position: relative;
+        display: flex;
+        padding: 48px;
+        align-items: baseline;
     }
     
-    .cabecalho__vetor1 {
-        position: absolute;
-        left: 0px;
-        top: 0px;
+    .icone-mensagem {
+        margin-left: 50px;
     }
 
-    .cabecalho__vetor4 {
+
+    .icone-perfil {
+        width: 40px;
+        height: 40px;
+        margin-left: 135px;
+    }
+
+    .cabecalho__vetor1 {
         position: absolute;
-        left: -0.5px;
+        left: -1px;
         top: 0px;
+    }
+ 
+    .vetor3 {
+        position: absolute;
+        width: 84.03px;
+        height: 415px;
+        left: 275.7px;
+        top: 199px;
     }
 
     .cabecalho-patas {
@@ -29,106 +45,150 @@
         top: 0px;
     }
 
-    .icone-home {
-        position: absolute;
-        top: 48px;
-        left: 48px;
-    }
-    
-    .icone-mensagem {
-        position: absolute;
-        top: 50.14px;
-        left: 125.81px;
-    }
-
     .logo-inicial {
-        position: absolute;
+        padding: 48px 87px 40px 87px;
+        text-align: center;
         width: 186.67px;
         height: 46px;
-        left: 87px;
-        top: 168px;
     }
 
     .titulo-inicial {
-        position: absolute;
         font-weight: 500;
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 26px;
         text-align: center;
-        left: 102px;
-        top: 248px;
         color: #FFFFFF;
     }
 
     .texto-inicial {
-        position: absolute;
         width: 236px;
         height: 72px;
-        left: 62px;
-        top: 300px;
         text-align: center;
         color: #FFFFFF;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
+        margin: 0 auto;
+        padding: 30px;
     }
 
-    .forma2 {
-        position: absolute;
-        width: 84.03px;
-        height: 415px;
-        left: 290.7px;
-        top: 199px;
-    }
 
     .secao-login {
         display: flex;
         flex-direction: column;
-        padding-top: 32px;
     }
 
     .botao__login {
-        position: absolute;
+        margin: 0 auto;
         width: 180px;
-        height: 40px;
-        left: 90px;
-        top: 398px;
-        
+        height: 40px;  
+        margin-bottom: 18px;     
     }
 
     .botao__cadastro {
-        position: absolute;
+        margin: 0 auto;
         width: 180px;
         height: 40px;
-        left: 90px;
-        top: 454px;
+        margin-bottom: 18px; 
     }
 
     .ilustracao-inicial {
-        position: absolute;
-        left: 42px;
-        top: 535px;
+        position: relative;
+        left: 33.66px;
+        top: 21px;
     }
     
-    
-    /* .icone-perfil {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 283px;
-        top: 40px;
-
-    } */
 
     .rodape {
-        position: absolute;
+        position: relative;
         width: 360px;
         background-color: #36D6AD;
         text-align: center;
         padding: 40px 0;
         color: #FFFFFF;
-        top: 813px;
         font-size: 16px;
         font-weight: 400;
     }
+
+    /* ...tela de mensagem */
+
+    .texto-mensagem {
+        margin: 0 auto;
+        padding: 48px 0 24px 0;
+        width: 226px;
+        height: 60px;
+        color: #3772FF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .form-container {
+        margin: 0 auto 24px auto;
+        width: 312px;
+        left: 24px;
+        background: #F7F7F7;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .formulario-mensagem {
+        padding: 17px 16px;
+    }
+
+    .formulario-mensagem label{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #3772FF;
+        padding: 15px 0 10px 0;
+    }
+
+    .formulario-mensagem input {
+        box-sizing: border-box;
+        width: 280px;
+        height: 48px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        border: 1px solid #FFFFFF;
+        padding-left: 10px;
+    }
+ 
+    .formulario-mensagem ::placeholder {
+        color: #BCBCBC;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #input-mensagem {
+        box-sizing: border-box;
+        width: 280px;
+        height: 172px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        border: 1px solid #FFFFFF;
+    }
+
+    #input-mensagem::placeholder {
+        padding: 10px 0 0 10px;
+    }
+
+    #botao__mensagem {
+        padding: 40px 24px 24px 24px;
+        text-align: center;
+    }
+
+    .botao-mensagem {
+        width: 148px;
+        height: 40px;
+    }
+    
 }
