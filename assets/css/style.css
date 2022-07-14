@@ -2,10 +2,6 @@
 
     /* ....Tela Inicial..... */
 
-    .container-background {
-        background-color: #3772FF;
-    }
-
 
     .cabecalho__menu {
         position: relative;
@@ -18,36 +14,14 @@
         margin-left: 50px;
     }
 
-
     .icone-perfil {
         width: 40px;
         height: 40px;
         margin-left: 135px;
     }
 
-    .cabecalho__vetor1 {
-        position: absolute;
-        left: -1px;
-        top: 0px;
-    }
- 
-    .vetor3 {
-        position: absolute;
-        width: 84.03px;
-        height: 415px;
-        left: 275.7px;
-        top: 199px;
-    }
-
-    .cabecalho-patas {
-        position: absolute;
-        left: 225px;
-        top: 0px;
-    }
-
     .logo-inicial {
         padding: 48px 87px 40px 87px;
-        text-align: center;
         width: 186.67px;
         height: 46px;
     }
@@ -71,7 +45,6 @@
         margin: 0 auto;
         padding: 30px;
     }
-
 
     .secao-login {
         display: flex;
@@ -101,7 +74,7 @@
 
     .rodape {
         position: relative;
-        width: 360px;
+        width: 100%;
         background-color: #36D6AD;
         text-align: center;
         padding: 40px 0;
@@ -222,15 +195,16 @@
 
     #label-foto__perfil {
         padding: 0;
+        cursor: pointer;
     }
-
+    
     .personal-figure {
         position: relative;
         width: 120px;
         height: 90px;
         left: 78px;
     }
-
+    
     .foto-perfil {
         box-sizing: border-box;
         border-radius: 100%;
@@ -245,5 +219,188 @@
         line-height: 24px;
         text-align: center;
         color: #FC7071;
+    }
+
+    /* .....Pagina Login..... */ 
+
+
+    .logo-login {
+        padding: 40px 108.5px 40px 108.5px;
+        width: 142.54px;
+        height: 34.36px;
+    }
+
+    .titulo-login {
+        text-align: center;
+        font-weight: 400;
+        line-height: 21px;
+        font-size: 16px;
+        color: #3772FF;
+        padding: 16px 0 45px 0;
+    }
+
+    .area-login {
+        text-align: center;
+    }
+
+    .area-login label{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #737380;
+        padding: 15px 0 10px 0;
+        display: block;
+    }
+
+    .olho-senha {
+        position: absolute;
+        right: 37px;
+        top: 464px;
+    }
+
+    .area-login input {
+        box-sizing: border-box;
+        width: 312px;
+        height: 40px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        border: 1px solid #FFFFFF;
+        padding-left: 10px;
+    }
+
+    .area-login ::placeholder {
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #BCBCBC;
+    }
+
+    .link-senha {
+        text-align: center;
+        padding: 15px 0 32px 0;
+    }
+
+    .recuperar-senha {
+        color: #FC7071;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        margin-top: 15px;
+    }
+
+    .botao-logar {
+        width: 148px;
+        height: 40px;
+        margin: 0 108px 201px 108px;
+    }
+
+    /* .....Página cadastro...... */
+
+    .titulo-cadastro {
+        width: 312px;
+        height: 71px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #3772FF;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 32px;
+    }
+
+    .olho-senha__cadastro {
+        position: absolute;
+        right: 37px;
+        top: 575px;
+    }
+
+    .olho-senha__confirmar {
+        position: absolute;
+        right: 37px;
+        top: 665px;
+    }
+
+    .botao-cadastrar {
+        width: 148px;
+        height: 40px;
+        margin: 40px 108px;
+    }
+
+    /* .....Página home..... */
+
+    .titulo-home {
+        margin: 0 auto;
+        padding: 24px 0;
+        width: 226px;
+        height: 40px;
+        color: #3772FF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .adocao__ficha {
+        background-color: #F6F6F6;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        box-sizing: border-box;
+        width: 360px;
+        height: 196px;
+        margin: 16px 0;
+    }
+
+    .ficha__imagem {
+        width: 148px;
+        height: 148px;
+    }
+
+    .adocao__conteudo {
+        height: 200px;
+        position: relative;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #737380;
+    }
+
+    .animal-nome {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #3772FF;
+        padding: 17px 0 11px 0;
+    }
+    
+    .adocao__contato {
+        padding-top: 34px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #737380;
+    }
+
+    .adocao__contato button{
+        margin-right: 5px;
+        width: 18px;
+        height: 18px;
+        background: none;
+        border: none;
+    }
+
+    .adocao__contato span {
+        margin-left: 7px;
+    }
+
+    .adocao__contato a {
+        text-decoration: none;
+        color: #737380;
     }
 }

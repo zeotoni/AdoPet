@@ -2,6 +2,25 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+.container-inicio {
+    background: url(../img/vetor1.png), url(../img/Forma\ 2.png);
+    background-repeat: no-repeat;
+    background-position: top left, right;
+    background-color: #3772FF;
+}
+
+.container-login {
+    background-image: url(../img/vetor-login.png), url(../img/vetor2-login.png);
+    background-position: top left, left 368px;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-image: url(../img/vetor1.png);
+    background-repeat: no-repeat;
+}
+
 .botao {
     color: #FFFFFF;
     text-align: center;
@@ -13,4 +32,10 @@ body {
     border-radius: 6px;
     border: solid 1px #FC7071;
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.25));
+    cursor: pointer;
+}
+
+.botao a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
