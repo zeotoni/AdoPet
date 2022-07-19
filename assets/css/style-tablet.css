@@ -1,0 +1,310 @@
+@media screen and (min-width: 768px) {
+    
+
+    /* ....Background Images.... */
+
+    .container-inicio {
+        background: url(../img/vetor1.svg), url(../img/vetor2.svg);
+        background-repeat: no-repeat;
+        background-position: top left, right;
+        background-size: 560px, 134px;
+        background-color: #3772FF;
+    }
+    
+    .container-login {
+        background: url(../img/vetor1.svg), url(../img/Patas.svg), url(../img/vetor2.svg);
+        background-position: top left, top right, right 265px;
+        background-repeat: no-repeat;
+    }
+    
+    .container {
+        background: url(../img/vetor1.svg), url(../img/vetor2.svg);
+        background-position: top left, right 265px;
+        background-repeat: no-repeat;
+    }
+
+    .container-galeria {
+        background: url(../img/vetor1.svg);
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+    
+    
+
+    /* ....Tela Inicial..... */
+
+
+    .cabecalho__menu {
+        width: 304.14px;
+        height: 30.86px;
+        justify-content: space-between;
+        padding: 64px 50px;
+    }
+    
+    .icone-mensagem {
+        margin-left: 0;
+    }
+
+    .icone-perfil {
+        width: 48px;
+        height: 48px;
+        top: 64px;
+        right: 50px;
+    }
+
+    .logo-tablet {
+        display: block;
+        width: 128px;
+        height: 30.86px;
+    }
+
+    .logo-inicial {
+        width: 251.59px;
+        height: 62px;
+        padding: 108px 0 40px 0;
+
+    }
+
+    .titulo-inicial {
+        font-size: 28px; 
+    }
+
+    .texto-inicial {
+        display: none;
+    }
+
+    .texto-inicial__tablet {
+        display: block;
+        width: 344px;
+        height: 78px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        margin: 0 auto;
+        padding: 30px 0 38px 0;
+    }
+
+    .botao__login {
+        width: 344px;
+        height: 48px;
+    }
+
+    .botao__cadastro {
+        width: 344px;
+        height: 48px;
+    }
+
+    .ilustracao-inicial {
+        width: 338.28px;
+        height: 422px;
+        left: 182.66px;
+        top: 37px;
+    }
+    
+
+    .rodape {
+        padding: 45px 0;
+    }
+
+    /* ...tela de mensagem */
+
+    .texto-mensagem {
+        padding: 120px 0 40px 0;
+        width: 524px;
+        height: 52px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .form-container {
+        margin: 0 auto 75px auto;
+        width: 524px;
+    }
+
+    .form {
+        padding: 16px 16px 32px 16px;
+    }
+
+    .form input {
+        width: 492px;
+        height: 48px;
+    }
+
+    .form label {
+        padding: 16px 0 8px 0
+    }
+
+    #input-mensagem {
+        width: 492px;
+        height: 172px;
+    }
+
+
+    #botao__mensagem {
+        padding: 32px;
+        text-align: center;
+    }
+
+
+    /* .....Página perfil...... */
+
+    .texto-perfil {
+        width: 524px;
+        height: 52px;
+        padding: 120px 0 26px 0;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .titulo__perfil {
+        padding-top: 32px;
+    }
+
+    .input-foto {
+        text-align: center;
+    }
+
+    .input-foto input[type="file"] {
+        display: none;
+    }
+
+    #label-foto__perfil {
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .personal-figure {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        left: 204px;
+    }
+    
+    
+    .foto-perfil__alterar {
+        padding-top: 5px;
+    }
+
+    /* .....Pagina Login..... */ 
+
+
+    .logo-login {
+        padding: 90px 0 40px 0;
+        width: 251.59px;
+        height: 62px;
+    }
+
+    .titulo-login {
+        font-size: 18px;
+        padding: 0 0 30px 0;
+    }
+
+    .area-login {
+        text-align: center;
+    }
+
+    .area-login label{
+        font-size: 18px;
+        line-height: 24px;
+        padding: 24px 0 10px 0;
+    }
+
+    .olho-senha {
+        position: absolute;
+        right: 232px;
+        top: 570px;
+    }
+
+    .area-login input {
+        width: 344px;
+        height: 40px;       
+    }
+
+    .link-senha {
+        text-align: center;
+        padding: 15px 0 32px 0;
+    }
+
+    .recuperar-senha {
+        font-size: 14px;
+        line-height: 37px;
+    }
+
+    .botao-logar {
+        width: 164px;
+        margin: 8px 302px 438px 302px;
+    }
+
+    /* .....Página cadastro...... */
+
+    .titulo-cadastro {
+        width: 525px;
+        height: 78px;
+        font-size: 18px;
+        line-height: 26px;
+        padding-bottom: 40px;
+    }
+
+    .olho-senha__cadastro {
+        position: absolute;
+        right: 232px;
+        top: 709px;
+    }
+
+    .olho-senha__confirmar {
+        position: absolute;
+        right: 232px;
+        top: 797px;
+    }
+
+    .botao-cadastrar {
+        width: 164px;
+        margin: 45px 302px 180px 302px;
+    }
+
+    /* .....Página home..... */
+
+    .titulo-home {
+        padding: 120px 0 32px 0;
+        width: 373px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .titulo-home br {
+        display: block;
+    }
+
+    .adocao__lista {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 16px;
+        padding: 0 48px 32px 32px ;
+    }
+    
+    .adocao__ficha {
+        width: 344px;
+        margin: 0px;
+    }
+
+    .ficha__imagem { 
+        width: 148px;
+        height: 148px;
+    }
+
+    .adocao__conteudo {
+        width: 145px;
+        color: #444444;
+    }
+    
+    .adocao__contato {
+        padding-top: 30px;
+    }
+
+    .adocao__contato a {
+        color: #444444;
+    }
+    
+}

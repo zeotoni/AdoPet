@@ -1,0 +1,257 @@
+@media screen and (min-width: 1280px) {
+    
+
+    /* ....Background Images.... */
+
+    .container-inicio {
+        background: url(../img/vetor1.svg), url(../img/vetor2.svg);
+        background-repeat: no-repeat;
+        background-position: top left, right;
+        background-size: 560.97px, 134px;
+        background-color: #3772FF;
+    }
+    
+    .container-login {
+        background: url(../img/vetor1.svg), url(../img/Patas.svg), url(../img/vetor2.svg);
+        background-position: top left, top right, right 265px;
+        background-repeat: no-repeat;
+    }
+    
+    .container {
+        background: url(../img/vetor1.svg), url(../img/vetor2.svg);
+        background-position: top left, right 265px;
+        background-repeat: no-repeat;
+    }
+
+
+    /* ....Tela Inicial..... */
+
+
+    .cabecalho__menu {
+        width: 251.14px;
+        height: 30.86px;
+        padding: 64px 161.17px 37px 161.17px;
+    }
+
+    .icone-perfil {
+        width: 56px;
+        height: 48px;
+        top: 56px;
+        right: 172px;
+    }
+
+    .logo-tablet {
+        width: 128px;
+        height: 30.86px;
+    }
+
+    .logo-inicial {
+        width: 260px;
+        height: 64px;
+        padding: 0 0 40px 0;
+    }
+
+    .titulo-inicial {
+        line-height: 48px; 
+    }
+
+    .texto-inicial {
+        display: none;
+    }
+
+    .texto-inicial__tablet {
+        width: 488px;
+        height: 52px;
+        padding: 24px 0 32px 0;
+    }
+
+    .botao__login {
+        width: 362px;
+    }
+
+    .botao__cadastro {
+        width: 362px;
+    }
+
+    .ilustracao-inicial {
+        width: 346px;
+        height: 431.63px;
+        left: 466.66px;
+        top: 37px;
+    }
+    
+
+    .rodape {
+        padding: 45px 0;
+    }
+
+    /* ...tela de mensagem */
+
+    .texto-mensagem {
+        padding: 90px 0 40px 0;
+        width: 492px;
+    }
+
+    .form-container {
+        margin: 0 auto 40px auto;
+        width: 552px;
+    }
+
+    .botao-mensagem {
+        width: 164px;
+    }
+
+    #botao__mensagem {
+        padding: 32px;
+        text-align: center;
+    }
+
+
+    /* .....Página perfil...... */
+
+    .texto-perfil {
+        width: 552px;
+        padding: 90px 0 32px 0;
+    }
+
+    .titulo__perfil {
+        padding-top: 32px;
+    }
+
+    .input-foto {
+        text-align: center;
+    }
+
+    .input-foto input[type="file"] {
+        display: none;
+    }
+
+    #label-foto__perfil {
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .personal-figure {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        left: 204px;
+    }
+    
+    
+    .foto-perfil__alterar {
+        padding-top: 5px;
+    }
+
+    /* .....Pagina Login..... */ 
+
+
+    .logo-login {
+        width: 260px;
+        height: 64px;
+        padding: 0 0 64px 0;
+    }
+
+    .titulo-login {
+        font-size: 18px;
+        padding: 0 0 72px 0;
+    }
+
+    .area-login {
+        text-align: center;
+    }
+
+    #senha-desktop {
+        width: 362px;
+    }
+
+    .olho-senha {
+        position: absolute;
+        right: 515px;
+        top: 521px;
+    }
+
+    .area-login input {
+        width: 552px;    
+    }
+
+    .alinhamento-botao{
+        text-align: center;
+    }
+
+    .botao-logar {
+        width: 174px;
+        /* margin: 8px 598px 352px 598px; */
+    }
+
+    /* .....Página cadastro...... */
+
+    .titulo-cadastro {
+        width: 552px;
+        height: 78px;
+        padding-bottom: 48px;
+    }
+
+    .olho-senha__cadastro {
+        position: absolute;
+        right: 515px;
+        top: 653px;
+    }
+
+    .olho-senha__confirmar {
+        position: absolute;
+        right: 515px;
+        top: 750px;
+    }
+
+    .botao-cadastrar {
+        width: 174px;
+        /* margin: 45px 553px 180px 553px; */
+    }
+
+    /* .....Página home..... */
+
+    .titulo-home {
+        padding: 100px 0 40px 0;
+        width: 414px;
+        height: 20px;
+        font-size: 18px;
+    }
+
+    .titulo-home br {
+        display: none;
+    }
+
+    .adocao__lista {
+        width: 1106px;
+        margin: 40px auto 60px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 0;
+    }
+
+    .adocao__ficha {
+        width: 344px;
+        margin: 0px;
+    }
+
+    .ficha__imagem { 
+        width: 148px;
+        height: 148px;
+    }
+
+    .adocao__conteudo {
+        width: 145px;
+        color: #444444;
+    }
+    
+    .adocao__contato {
+        padding-top: 30px;
+    }
+
+    .adocao__contato a {
+        color: #444444;
+    }
+    
+}

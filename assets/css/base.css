@@ -3,24 +3,6 @@ body {
 }
 
 
-.container-inicio {
-    background: url(../img/vetor1.png), url(../img/Forma\ 2.png);
-    background-repeat: no-repeat;
-    background-position: top left, right;
-    background-color: #3772FF;
-}
-
-.container-login {
-    background-image: url(../img/vetor-login.png), url(../img/vetor2-login.png);
-    background-position: top left, left 368px;
-    background-repeat: no-repeat;
-}
-
-.container {
-    background-image: url(../img/vetor1.png);
-    background-repeat: no-repeat;
-}
-
 .botao {
     color: #FFFFFF;
     text-align: center;

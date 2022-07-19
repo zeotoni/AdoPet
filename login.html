@@ -10,17 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-mobile.css">
+    <link rel="stylesheet" href="./assets/css/style-tablet.css">
+    <link rel="stylesheet" href="./assets/css/style-desktop.css">
 </head>
 <body class="container-login">
     <header class="cabecalho">
         <div class="cabecalho__menu">
+            <a href="#"><img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-tablet"></a>
             <a href="index.html" class="icone-home"><img src="./assets/img/Casa.png" alt="Ícone de casa"></a>
             <a href="mensagem.html" class="icone-mensagem"><img src="./assets/img/Mensagens.svg" alt="Ícone de mensagem"></a>
         </div>
     </header>
     <main>
-        <img src="./assets/img/logo-azul.png" alt="Logo da adopet" class="logo-login">
+        <div class="alinhamento-logo">
+            <img src="./assets/img/logo-azul.svg" alt="Logo da adopet" class="logo-login">
+        </div>
         <h3 class="titulo-login">Já tem conta? Faça seu login:</h3>
         <form action="#" class="area-login">
             <div class="input-email">
@@ -29,14 +34,16 @@
             </div>
             <div class="input-senha">
                 <label for="senha">Senha</label>
-                <input type="text" placeholder="Insira sua senha">
+                <input type="text" placeholder="Insira sua senha" id="senha-desktop">
                 <img src="./assets/img/olho-senha.svg" alt="Olho clicável para vizualizar senha" class="olho-senha">
             </div>
         </form>
         <div class="link-senha">
             <a href="#" class="recuperar-senha">Esqueci minha senha</a>
         </div>
-        <button class="botao botao-logar"><a href="home.html">Entrar</a></button>
+        <div class="alinhamento-botao">
+            <button class="botao botao-logar"><a href="home.html">Entrar</a></button>
+        </div>
     </main>
     <footer class="rodape">
         <p>2022-Desenvolvido por Alura.</p>

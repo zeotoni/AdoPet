@@ -1,4 +1,27 @@
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 0) {
+
+    /* ....Background Images.... */
+
+    .container-inicio {
+        background: url(../img/vetor1.svg), url(../img/vetor2.svg);
+        background-repeat: no-repeat;
+        background-position: top left, right;
+        background-size: 352.11px, 84.03px;
+        background-color: #3772FF;
+    }
+
+    .container-login {
+        background: url(../img/vetor-login.png), url(../img/vetor2-login.png);
+        background-position: top left, left 368px;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        background: url(../img/vetor1.svg);
+        background-repeat: no-repeat;
+        background-size: 352.11px;
+    }
+
 
     /* ....Tela Inicial..... */
 
@@ -7,21 +30,31 @@
         position: relative;
         display: flex;
         padding: 48px;
-        align-items: baseline;
+        align-items: center;
     }
-    
+
+    .logo-tablet {
+        display: none;
+    }
+
     .icone-mensagem {
         margin-left: 50px;
     }
 
     .icone-perfil {
+        position: absolute;
         width: 40px;
         height: 40px;
-        margin-left: 135px;
+        right: 37px;
+        top: 40px;
+    }
+
+    .alinhamento-logo {
+        text-align: center;
     }
 
     .logo-inicial {
-        padding: 48px 87px 40px 87px;
+        padding: 48px 0 40px 0;
         width: 186.67px;
         height: 46px;
     }
@@ -44,6 +77,10 @@
         line-height: 24px;
         margin: 0 auto;
         padding: 30px;
+    }
+
+    .texto-inicial__tablet {
+        display: none;
     }
 
     .secao-login {
@@ -70,7 +107,7 @@
         left: 33.66px;
         top: 21px;
     }
-    
+
 
     .rodape {
         position: relative;
@@ -130,7 +167,7 @@
         border: 1px solid #FFFFFF;
         padding-left: 10px;
     }
- 
+
     .form ::placeholder {
         color: #BCBCBC;
         font-weight: 400;
@@ -197,14 +234,14 @@
         padding: 0;
         cursor: pointer;
     }
-    
+
     .personal-figure {
         position: relative;
         width: 120px;
         height: 90px;
         left: 78px;
     }
-    
+
     .foto-perfil {
         box-sizing: border-box;
         border-radius: 100%;
@@ -212,7 +249,7 @@
         box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
         transition: all ease-in-out .3s;
     }
-    
+
     .foto-perfil__alterar {
         font-weight: 400;
         font-size: 12px;
@@ -225,7 +262,7 @@
 
 
     .logo-login {
-        padding: 40px 108.5px 40px 108.5px;
+        padding: 40px 0;
         width: 142.54px;
         height: 34.36px;
     }
@@ -262,9 +299,9 @@
         box-sizing: border-box;
         width: 312px;
         height: 40px;
-        background: #FFFFFF;
+        background: #F7F7F7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
         mix-blend-mode: normal;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
         border-radius: 6px;
         border: 1px solid #FFFFFF;
         padding-left: 10px;
@@ -305,7 +342,7 @@
         height: 71px;
         font-weight: 400;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 21px;
         color: #3772FF;
         text-align: center;
         margin: 0 auto;
@@ -343,11 +380,15 @@
         line-height: 20px;
         text-align: center;
     }
-    
+
+    .titulo-home br {
+        display: none;
+    }
+
+
     .adocao__ficha {
         background-color: #F6F6F6;
         display: flex;
-        justify-content: space-evenly;
         align-items:center;
         box-sizing: border-box;
         width: 360px;
@@ -356,13 +397,16 @@
     }
 
     .ficha__imagem {
+        margin-left: 24px;
+        margin-right: 16px;
         width: 148px;
         height: 148px;
     }
 
     .adocao__conteudo {
-        height: 200px;
+        height: 161px;
         position: relative;
+        top: -17px;
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
@@ -374,16 +418,17 @@
         font-size: 16px;
         line-height: 20px;
         color: #3772FF;
-        padding: 17px 0 11px 0;
+        padding: 16px 0 8px 0;
     }
-    
+
     .adocao__contato {
+        width: 148px;
         padding-top: 34px;
         display: flex;
         flex-direction: column;
         font-weight: 400;
         font-size: 12px;
-        line-height: 20px;
+        line-height: 16px;
         color: #737380;
     }
 
@@ -397,10 +442,12 @@
 
     .adocao__contato span {
         margin-left: 7px;
+        font-size: 10px;
     }
 
     .adocao__contato a {
         text-decoration: none;
         color: #737380;
+        padding-top: 7px;
     }
 }
