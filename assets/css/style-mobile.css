@@ -293,6 +293,9 @@
         position: absolute;
         right: 37px;
         top: 464px;
+        width: 18px;
+        height: 16px;
+        color: #737380;
     }
 
     .area-login input {

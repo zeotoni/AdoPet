@@ -28,33 +28,35 @@
         </div>
         <h3 class="titulo-cadastro">Ainda não tem cadastro?<br>
             Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</h3>
-        <form action="#" class="area-login">
+        <form action="./login.html" class="area-login">
+           <fieldset>
             <div class="input-email">
                 <label for="email">Email</label>
-                <input type="text" placeholder="Escolha seu melhor email">
+                <input type="email" placeholder="Escolha seu melhor email" id="input-email" required>
             </div>
             <div class="input-nome">
-                <label for="email">Nome</label>
-                <input type="text" placeholder="Digite seu nome completo">
+                <label for="name">Nome</label>
+                <input type="text" placeholder="Digite seu nome completo" required>
             </div>
             <div class="input-senha">
                 <label for="senha">Senha</label>
-                <input type="text" placeholder="Crie uma senha" id="senha-desktop">
-                <img src="./assets/img/olho-senha.svg" alt="Olho clicável para vizualizar senha" class="olho-senha__cadastro">
+                <input type="password" placeholder="Crie uma senha" id="input-senha" required>
+                <img src="./assets/img/eye-closed.svg" alt="Ícone de olho clicável para vizualizar a senha" id="olho-senha" class="olho-senha__cadastro">
             </div>
             <div class="input-senha">
                 <label for="senha">Confirme sua senha</label>
-                <input type="text" placeholder="Repita a senha criada acima" id="senha-desktop">
-                <img src="./assets/img/olho-senha.svg" alt="Olho clicável para vizualizar senha" class="olho-senha__confirmar">
+                <input type="password" placeholder="Repita a senha criada acima" id="input-confirmar" required>
+                <img src="./assets/img/eye-closed.svg" alt="Ícone de olho clicável para vizualizar a senha" id="olho-confirmar" class="olho-senha__confirmar">
             </div>
+           </fieldset>
+           <div class="alinhamento-botao">
+               <button class="botao botao-cadastrar">Cadastrar</button>
+           </div>
         </form>
-        <div class="alinhamento-botao">
-            <button class="botao botao-cadastrar"><a href="login.html">Cadastrar</a></button>
-        </div>
     </main>
     <footer class="rodape">
         <p>2022-Desenvolvido por Alura.</p>
     </footer>
-    
+    <script src="index.js"></script>
 </body>
 </html>

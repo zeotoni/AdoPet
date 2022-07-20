@@ -27,27 +27,29 @@
             <img src="./assets/img/logo-azul.svg" alt="Logo da adopet" class="logo-login">
         </div>
         <h3 class="titulo-login">Já tem conta? Faça seu login:</h3>
-        <form action="#" class="area-login">
-            <div class="input-email">
-                <label for="email">Email</label>
-                <input type="text" placeholder="Insira seu email">
+        <form action="home.html" class="area-login">
+            <fieldset>
+                <div class="input-email">
+                    <label for="email">Email</label>
+                    <input id="input-email" type="email" placeholder="Insira seu email" required>
+                </div>
+                <div class="input-senha">
+                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="Insira sua senha" id="input-senha" required>
+                    <img src="./assets/img/eye-closed.svg" alt="Olho clicável para vizualizar senha" id="olho-senha" class="olho olho-senha">
+                </div>
+            </fieldset>
+            <div class="link-senha">
+                <a href="#" class="recuperar-senha">Esqueci minha senha</a>
             </div>
-            <div class="input-senha">
-                <label for="senha">Senha</label>
-                <input type="text" placeholder="Insira sua senha" id="senha-desktop">
-                <img src="./assets/img/olho-senha.svg" alt="Olho clicável para vizualizar senha" class="olho-senha">
+            <div class="alinhamento-botao">
+                <button  class="botao botao-logar" id="botao-logar">Entrar</button>
             </div>
         </form>
-        <div class="link-senha">
-            <a href="#" class="recuperar-senha">Esqueci minha senha</a>
-        </div>
-        <div class="alinhamento-botao">
-            <button class="botao botao-logar"><a href="home.html">Entrar</a></button>
-        </div>
     </main>
     <footer class="rodape">
         <p>2022-Desenvolvido por Alura.</p>
     </footer>
-    
+    <script src="index.js"></script>
 </body>
 </html>

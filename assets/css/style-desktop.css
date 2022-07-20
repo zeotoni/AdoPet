@@ -161,7 +161,11 @@
         text-align: center;
     }
 
-    #senha-desktop {
+    #input-senha {
+        width: 362px;
+    }
+
+    #input-confirmar {
         width: 362px;
     }
 
