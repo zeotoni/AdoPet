@@ -1,0 +1,120 @@
+{
+  "usuarios": [
+    {
+      "emailSv": "brunabsg@gmail.com",
+      "nomeSv": "Bruna",
+      "senhaSv": "Olhaociro12",
+      "id": 4
+    },
+    {
+      "emailSv": "zeotoni666@gmail.com",
+      "nomeSv": "Ezequiel",
+      "senhaSv": "Cruciatos1",
+      "id": 5
+    },
+    {
+      "emailSv": "biahotoni@gmail.com",
+      "nomeSv": "Bianca",
+      "senhaSv": "Biancaotoni1",
+      "id": 6
+    },
+    {
+      "emailSv": "renatocariri@hotmail.com",
+      "nomeSv": "Renato",
+      "senhaSv": "Novigraad13",
+      "id": 7
+    }
+  ],
+  "cardPets": [
+    {
+      "img": "./assets/img/Dunga.png",
+      "alt":"Imagem de um cachorrinho",
+      "petNome": "Dunga",
+      "petIade": "2 anos",
+      "petPorte": "Porte pequeno",
+      "petCarac": "Calmo e educado",
+      "petAdress": " Rio de Janeiro(RJ)",
+      "id": 1
+    },
+    {
+      "img": "./assets/img/Felícia.png",
+      "alt":"Imagem de gatinha",
+      "petNome": "Felícia",
+      "petIade": "3 meses",
+      "petPorte": "Porte pequeno",
+      "petCarac": "Ativa e carinhosa",
+      "petAdress": " Nova Iguaçú(RJ)",
+      "id": 2
+    },
+    {
+      "img": "./assets/img/sirius.png",
+      "alt":"Imagem de um cachorrinho",
+      "petNome": "Sírius",
+      "petIade": "6 meses",
+      "petPorte": "Porte grande",
+      "petCarac": "Ativo e educado",
+      "petAdress": "  Duque de Caxias(RJ)",
+      "id": 3
+    },
+    {
+      "img": "./assets/img/Fiona.png",
+      "alt":"Imagem de uma cachorrinha",
+      "petNome": "Fiona",
+      "petIade": "3 anos",
+      "petPorte": "Porte pequeno",
+      "petCarac": "Calma e carinhosa",
+      "petAdress": " São Gonçalo(RJ)",
+      "id": 4
+    },
+    {
+      "img": "./assets/img/Sid.png",
+      "alt":"Imagem de um cachorrinho",
+      "petNome": "Sid",
+      "petIade": "8 meses",
+      "petPorte": "Porte médio/grande",
+      "petCarac": "Brincalhão e amável",
+      "petAdress": " Rio de Janeiro(RJ)",
+      "id": 5
+    },
+    {
+      "img": "./assets/img/Yoda.png",
+      "alt":"Imagem de um gatinho",
+      "petNome": "Yoda",
+      "petIade": "1 ano",
+      "petPorte": "Porte médio",
+      "petCarac": "Ativo e carinhoso",
+      "petAdress": " Nova Iguaçú(RJ)",
+      "id": 6
+    },
+    {
+      "img": "./assets/img/Lua.png",
+      "alt":"Imagem de uma gatinha",
+      "petNome": "Lua",
+      "petIade": "6 meses",
+      "petPorte": "Porte médio",
+      "petCarac": "Ativa e carinhosa",
+      "petAdress": "  Duque de Caxias(RJ)",
+      "id": 7
+    },
+    {
+      "img": "./assets/img/Amora.png",
+      "alt":"Imagem de uma cachorrinha",
+      "petNome": "Amora",
+      "petIade": "45 dias",
+      "petPorte": "Porte grande",
+      "petCarac": "Calma e carinhosa",
+      "petAdress": " São Gonçalo(RJ)",
+      "id": 8
+    },
+    {
+      "img": "./assets/img/zelda.png",
+      "alt":"Imagem de gatinha",
+      "petNome": "Zelda",
+      "petIade": "5 meses",
+      "petPorte": "Porte médio",
+      "petCarac": "Ativa e amável",
+      "petAdress": " Rio de Janeiro(RJ)",
+      "id": 9
+    }
+  ]
+}

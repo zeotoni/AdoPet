@@ -2,7 +2,7 @@
 
     /* ....Background Images.... */
 
-    .container-inicio {
+    .background-tela__inicio {
         background: url(../img/vetor1.svg), url(../img/vetor2.svg);
         background-repeat: no-repeat;
         background-position: top left, right;
@@ -33,7 +33,7 @@
         align-items: center;
     }
 
-    .logo-tablet {
+    .logo-barra__menu {
         display: none;
     }
 
@@ -49,17 +49,17 @@
         top: 40px;
     }
 
-    .alinhamento-logo {
+    .container-logo {
         text-align: center;
     }
 
-    .logo-inicial {
+    .logo-tela__inicio {
         padding: 48px 0 40px 0;
         width: 186.67px;
         height: 46px;
     }
 
-    .titulo-inicial {
+    .titulo-principal__inicio {
         font-weight: 500;
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 26px;
@@ -67,7 +67,7 @@
         color: #FFFFFF;
     }
 
-    .texto-inicial {
+    .subtitulo-inicio {
         width: 236px;
         height: 72px;
         text-align: center;
@@ -79,11 +79,11 @@
         padding: 30px;
     }
 
-    .texto-inicial__tablet {
+    .subtitulo-inicio__alternativo {
         display: none;
     }
 
-    .secao-login {
+    .container-btn__login {
         display: flex;
         flex-direction: column;
     }
@@ -102,12 +102,11 @@
         margin-bottom: 18px; 
     }
 
-    .ilustracao-inicial {
+    .ilustracao-tela__inicio {
         position: relative;
         left: 33.66px;
         top: 21px;
     }
-
 
     .rodape {
         position: relative;
@@ -184,10 +183,15 @@
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
         border-radius: 6px;
         border: 1px solid #FFFFFF;
+        overflow: hidden;
     }
 
     #input-mensagem::placeholder {
         padding: 10px 0 0 10px;
+    }
+
+    #input-mensagem:focus {
+        border-color: #808080;
     }
 
     #botao__mensagem {
@@ -260,7 +264,6 @@
 
     /* .....Pagina Login..... */ 
 
-
     .logo-login {
         padding: 40px 0;
         width: 142.54px;
@@ -310,6 +313,18 @@
         padding-left: 10px;
     }
 
+    /* .input-:focus {
+    } */
+    
+    input:focus {
+        border: 1px solid #808080 ;
+
+    }
+
+    textarea:focus {
+        border: 1px solid #808080 ;
+    }
+
     .area-login ::placeholder {
         text-align: center;
         font-weight: 400;
@@ -322,6 +337,29 @@
     .link-senha {
         text-align: center;
         padding: 15px 0 32px 0;
+    }
+    .msg-erro {
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #FC7071;
+        padding: 15px 0;
+        margin-top: 20px;
+        width: 312px;
+        margin: 15px auto 0 auto;
+        border-radius: 6px;
+        display: none;
+    }
+
+    .msg-sucesso {
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #FC7071;
+        padding: 15px 0;
+        margin-top: 20px;
+        width: 280px;
+        margin: 15px auto 0 auto;
+        border-radius: 6px;
+        display: none;
     }
 
     .recuperar-senha {
@@ -373,7 +411,7 @@
     /* .....Página home..... */
 
     .titulo-home {
-        margin: 0 auto;
+        margin: 20px auto 18px auto;
         padding: 24px 0;
         width: 226px;
         height: 40px;

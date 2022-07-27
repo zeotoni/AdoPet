@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdoPet</title>
+    <link rel="icon" href="./assets/img/icone-html.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,39 +18,40 @@
 <body class="container-login">
     <header class="cabecalho">
         <div class="cabecalho__menu">
-            <a href="#"><img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-tablet"></a>
+            <a href="#"><img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-barra__menu"></a>
             <a href="index.html" class="icone-home"><img src="./assets/img/Casa.png" alt="Ícone de casa"></a>
-            <a href="mensagem.html" class="icone-mensagem"><img src="./assets/img/Mensagens.svg" alt="Ícone de mensagem"></a>
+            <a href="index.html" class="icone-mensagem"><img src="./assets/img/Mensagens.svg" alt="Ícone de mensagem"></a>
         </div>
     </header>
     <main>
-        <div class="alinhamento-logo">
+        <div class="container-logo">
             <img src="./assets/img/logo-azul.svg" alt="Logo da adopet" class="logo-login">
         </div>
         <h3 class="titulo-login">Já tem conta? Faça seu login:</h3>
-        <form action="home.html" class="area-login">
+        <form class="area-login" data-form-login="formulario-login">
             <fieldset>
                 <div class="input-email">
                     <label for="email">Email</label>
-                    <input id="input-email" type="email" placeholder="Insira seu email" required>
+                    <input class="input-" type="email" placeholder="Insira seu email" data-email="email" required>
                 </div>
                 <div class="input-senha">
                     <label for="senha">Senha</label>
-                    <input type="password" placeholder="Insira sua senha" id="input-senha" required>
+                    <input class="input-" type="password" placeholder="Insira sua senha" id="input-senha__desktop" data-senha="senha" required>
                     <img src="./assets/img/eye-closed.svg" alt="Olho clicável para vizualizar senha" id="olho-senha" class="olho olho-senha">
                 </div>
+                <p class="msg-erro" data-msg-erro="msg-erro">Usuario ou senha incorretos!</p>
             </fieldset>
             <div class="link-senha">
                 <a href="#" class="recuperar-senha">Esqueci minha senha</a>
             </div>
             <div class="alinhamento-botao">
-                <button  class="botao botao-logar" id="botao-logar">Entrar</button>
+                <button type="submit" class="botao botao-logar" id="botao-logar">Entrar</button>
             </div>
         </form>
     </main>
     <footer class="rodape">
         <p>2022-Desenvolvido por Alura.</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

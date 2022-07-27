@@ -1,0 +1,20 @@
+{
+  "name": "projeto-adopet",
+  "version": "1.0.0",
+  "description": "<img src=\"./assets/img/logo-azul.svg\"> Projeto Alura Challenge Adopet-Página de adoção de pets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeotoni/AdoPet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeotoni/AdoPet/issues"
+  },
+  "homepage": "https://github.com/zeotoni/AdoPet#readme"
+}

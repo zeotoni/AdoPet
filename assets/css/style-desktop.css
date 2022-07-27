@@ -3,7 +3,7 @@
 
     /* ....Background Images.... */
 
-    .container-inicio {
+    .background-tela__inicio {
         background: url(../img/vetor1.svg), url(../img/vetor2.svg);
         background-repeat: no-repeat;
         background-position: top left, right;
@@ -40,26 +40,26 @@
         right: 172px;
     }
 
-    .logo-tablet {
+    .logo-barra__menu {
         width: 128px;
         height: 30.86px;
     }
 
-    .logo-inicial {
+    .logo-tela__inicio {
         width: 260px;
         height: 64px;
         padding: 0 0 40px 0;
     }
 
-    .titulo-inicial {
+    .titulo-principal__inicio {
         line-height: 48px; 
     }
 
-    .texto-inicial {
+    .subtitulo-inicio {
         display: none;
     }
 
-    .texto-inicial__tablet {
+    .subtitulo-inicio__alternativo {
         width: 488px;
         height: 52px;
         padding: 24px 0 32px 0;
@@ -73,7 +73,7 @@
         width: 362px;
     }
 
-    .ilustracao-inicial {
+    .ilustracao-tela__inicio {
         width: 346px;
         height: 431.63px;
         left: 466.66px;
@@ -161,11 +161,11 @@
         text-align: center;
     }
 
-    #input-senha {
+    #input-senha__desktop {
         width: 362px;
     }
 
-    #input-confirmar {
+    #input-confirmar__desktop {
         width: 362px;
     }
 

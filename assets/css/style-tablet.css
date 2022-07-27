@@ -3,7 +3,7 @@
 
     /* ....Background Images.... */
 
-    .container-inicio {
+    .background-tela__inicio {
         background: url(../img/vetor1.svg), url(../img/vetor2.svg);
         background-repeat: no-repeat;
         background-position: top left, right;
@@ -52,28 +52,28 @@
         right: 50px;
     }
 
-    .logo-tablet {
+    .logo-barra__menu {
         display: block;
         width: 128px;
         height: 30.86px;
     }
 
-    .logo-inicial {
+    .logo-tela__inicio {
         width: 251.59px;
         height: 62px;
         padding: 108px 0 40px 0;
 
     }
 
-    .titulo-inicial {
+    .titulo-principal__inicio {
         font-size: 28px; 
     }
 
-    .texto-inicial {
+    .subtitulo-inicio {
         display: none;
     }
 
-    .texto-inicial__tablet {
+    .subtitulo-inicio__alternativo {
         display: block;
         width: 344px;
         height: 78px;
@@ -96,7 +96,7 @@
         height: 48px;
     }
 
-    .ilustracao-inicial {
+    .ilustracao-tela__inicio {
         width: 338.28px;
         height: 422px;
         left: 182.66px;

@@ -1,6 +1,7 @@
-const inputEmail = document.querySelector('#input-email');
-const inputSenha = document.querySelector('#input-senha');
-const inputSenhaConfirmar = document.querySelector('#input-confirmar');
+const inputEmail = document.querySelector('[data-email]');
+const inputNome = document.querySelector('[data-nome="nome"]');
+const inputSenha = document.querySelector('[data-senha]');
+const inputSenhaConfirmar = document.querySelector('[data-senha-confirmar="senha-confirmar"]');
 
 const olhoSenha = document.querySelector('#olho-senha');
 const olhoConfirmar = document.querySelector('#olho-confirmar')
@@ -15,7 +16,6 @@ inputEmail.addEventListener('blur', ()=>{
        inputEmail.setCustomValidity("Esse formato de email não é válido");
     }
 })
-
 
 inputSenha.addEventListener('blur', () => {
     
@@ -65,3 +65,27 @@ inputSenhaConfirmar.addEventListener('blur', ()=> {
         inputSenhaConfirmar.setCustomValidity("As senhas não conferem");
     }
 });
+
+
+const formCadastro = document.querySelector('[data-form-cadastro]');
+formCadastro.addEventListener('submit', ()=> {
+
+    let jsonArr = {
+        "emailSv": inputEmail.value, 
+        "nomeSv": inputNome.value, 
+        "senhaSv": inputSenha.value
+    }
+    
+    const url = `http://localhost:3000/usuarios`;
+    const options  = {
+        method: 'POST',
+        mode: 'cors',
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(jsonArr)
+    }
+    fetch(url, options)
+    .then(
+        response => response.text()
+    )
+    .catch(error => console.log(error))
+}) 

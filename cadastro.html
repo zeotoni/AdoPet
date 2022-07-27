@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdoPet</title>
+    <link rel="icon" href="./assets/img/icone-html.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,46 +18,46 @@
 <body class="container-login">
     <header class="cabecalho">
         <div class="cabecalho__menu">
-            <a href="#"><img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-tablet"></a>
+            <a href="#"><img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-barra__menu"></a>
             <a href="index.html" class="icone-home"><img src="./assets/img/Casa.png" alt="Ícone de casa"></a>
-            <a href="mensagem.html" class="icone-mensagem"><img src="./assets/img/Mensagens.svg" alt="Ícone de mensagem"></a>
+            <a href="index.html" class="icone-mensagem"><img src="./assets/img/Mensagens.svg" alt="Ícone de mensagem"></a>
         </div>
     </header>
     <main>
-        <div class="alinhamento-logo">
+        <div class="container-logo">
             <img src="./assets/img/logo-azul.svg" alt="Logo da adopet" class="logo-login">
         </div>
         <h3 class="titulo-cadastro">Ainda não tem cadastro?<br>
             Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</h3>
-        <form action="./login.html" class="area-login">
+        <form action="./login.html" class="area-login" data-form-cadastro="formulario-cadastro">
            <fieldset>
             <div class="input-email">
                 <label for="email">Email</label>
-                <input type="email" placeholder="Escolha seu melhor email" id="input-email" required>
+                <input type="email" placeholder="Escolha seu melhor email" data-email="email" required>
             </div>
             <div class="input-nome">
                 <label for="name">Nome</label>
-                <input type="text" placeholder="Digite seu nome completo" required>
+                <input type="text" placeholder="Digite seu nome completo" data-nome="nome" required>
             </div>
             <div class="input-senha">
                 <label for="senha">Senha</label>
-                <input type="password" placeholder="Crie uma senha" id="input-senha" required>
+                <input type="password" placeholder="Crie uma senha" id="input-senha__desktop" data-senha="senha" required>
                 <img src="./assets/img/eye-closed.svg" alt="Ícone de olho clicável para vizualizar a senha" id="olho-senha" class="olho-senha__cadastro">
             </div>
             <div class="input-senha">
                 <label for="senha">Confirme sua senha</label>
-                <input type="password" placeholder="Repita a senha criada acima" id="input-confirmar" required>
+                <input type="password" placeholder="Repita a senha criada acima" id="input-confirmar__desktop" data-senha-confirmar="senha-confirmar" required>
                 <img src="./assets/img/eye-closed.svg" alt="Ícone de olho clicável para vizualizar a senha" id="olho-confirmar" class="olho-senha__confirmar">
             </div>
            </fieldset>
            <div class="alinhamento-botao">
-               <button class="botao botao-cadastrar">Cadastrar</button>
+               <button type="submit" class="botao botao-cadastrar" id="btn-cadastro">Cadastrar</button>
            </div>
         </form>
     </main>
     <footer class="rodape">
         <p>2022-Desenvolvido por Alura.</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="./js/cadastro.js"></script>
 </body>
 </html>

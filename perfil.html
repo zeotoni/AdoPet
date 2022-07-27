@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdoPet</title>
+    <link rel="icon" href="./assets/img/icone-html.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,10 +15,10 @@
     <link rel="stylesheet" href="./assets/css/style-tablet.css">
     <link rel="stylesheet" href="./assets/css/style-desktop.css">
 </head>
-<body class="container">
+<body class="container" onload="exibeDadosPerfil()">
     <header>
         <div class="cabecalho__menu">
-            <a href="#"><img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-tablet"></a>
+            <a href="#"><img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-barra__menu"></a>
             <a href="index.html" class="icone-home"><img src="./assets/img/Casa.png" alt="Ícone de casa"></a>
             <a href="mensagem.html" class="icone-mensagem"><img src="./assets/img/Mensagens.svg" alt="Ícone de mensagem"></a>
         </div>
@@ -40,19 +41,19 @@
                 </div>
                 <div class="input-nome">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Joana Magalhães">
+                    <input type="text" id="nome" placeholder="Joana Magalhães" required>
                 </div>
                 <div class="input-telefone">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" placeholder="55 11 XXXXXXXXX">
+                    <input type="tel" id="telefone" placeholder="55 11 XXXXXXXXX" required>
                 </div>
                 <div class="input-cidade">
                     <label for="cidade">Cidade</label>
-                    <input type="text" id="nome-animal" placeholder="São Paulo">
+                    <input type="text" id="nome-animal" placeholder="São Paulo" required>
                 </div>
                 <div class="input-sobre">
                     <label for="msg">Sobre</label>
-                    <textarea name="input-sobre" id="input-mensagem" cols="30" rows="10" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."></textarea>
+                    <textarea name="input-sobre" id="input-mensagem" cols="30" rows="10" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." required></textarea>
                 </div>
                 <div id="botao__mensagem"">
                     <button class="botao botao-mensagem">Salvar</button>
@@ -63,5 +64,5 @@
     <footer class="rodape">
         <p>2022-Desenvolvido por Alura.</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="./js/perfil.js"></script>
 </body>
