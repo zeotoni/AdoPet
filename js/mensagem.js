@@ -33,3 +33,12 @@ formMensagem.addEventListener('submit', (e)=> {
     mensagem.value = ("");
     msgSucess.setAttribute("style", "display: block")
 })
+
+const pegaUrl = new URL(window.location);
+const id = pegaUrl.searchParams.get('id');
+console.log(id)
+
+const iconePerfil = document.querySelector('[data-icone-perfil]');
+iconePerfil.addEventListener('click', () => {
+    window.location.href = `perfil.html?id=${id}`;
+})

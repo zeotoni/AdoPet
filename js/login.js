@@ -66,9 +66,9 @@ formLogin.addEventListener('submit', (e) => {
                 }
             }
         });
-        
+        const id = userValid.id;
         if(inputEmail.value === userValid.email && inputSenha.value === userValid.senha) {
-            window.location.href = 'home.html';
+            window.location.href = `home.html?id=${id}`;
           
         }else {
             inputSenha.value = ("");

@@ -33,7 +33,7 @@ const exibeCards = () => {
                     <p class="animal-caracteristica">${item.petCarac}</p>
                     <address class="adocao__contato">
                         ${item.petAdress}
-                        <a href="mensagem.html"><img src="./assets/img/ícone-contato.png" alt="Ícone de mensagem"><span>Falar com o responsável</span></a> 
+                        <a href="mensagem.html?id=${id}"><img src="./assets/img/ícone-contato.png" alt="Ícone de mensagem"><span>Falar com o responsável</span></a> 
                     </address>
                 </div>
             </li> `;
@@ -42,4 +42,31 @@ const exibeCards = () => {
         });
     })
 }
+const pegaUrl = new URL(window.location);
+const id = pegaUrl.searchParams.get('id');
 
+const iconePerfil = document.querySelector('[data-icone-perfil]');
+iconePerfil.addEventListener('click', () => {
+    window.location.href = `perfil.html?id=${id}`;
+})
+
+const iconeMsg = document.querySelector('[data-icone-msg]');
+iconeMsg.addEventListener('click', () => {
+    window.location.href = `mensagem.html?id=${id}`;
+})
+
+
+// function exibeInfosPessoais(id) {
+//     fetch(`http://localhost:3000/usuarios/${id}`)
+//     .then(response => {
+//         return response.json()
+//     })
+//     .then(response => {
+//         console.log(response)
+//         // let userInfo = {
+
+//         // }
+//     })
+// } 
+
+// exibeInfosPessoais(id);
