@@ -82,7 +82,7 @@ formCadastro.addEventListener('submit', ()=> {
           }
     }
     
-    const url = `http://localhost:3000/usuarios`;
+    const url = `https://arquivo-json-adopet.herokuapp.com/usuarios`;
     const options  = {
         method: 'POST',
         mode: 'cors',

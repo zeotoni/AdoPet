@@ -45,7 +45,7 @@ const formLogin = document.querySelector('[data-form-login]');
 
 formLogin.addEventListener('submit', (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3000/usuarios`)
+    fetch(`https://arquivo-json-adopet.herokuapp.com/usuarios`)
     .then(response => {
         return response.json();
     })

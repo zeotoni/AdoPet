@@ -1,5 +1,5 @@
 const exibeCards = () => {
-    fetch(`http://localhost:3000/cardPets`)
+    fetch(`https://arquivo-json-adopet.herokuapp.com/cardPets`)
     .then(response => {
         return response.json()
     })

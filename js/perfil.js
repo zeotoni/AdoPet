@@ -22,7 +22,7 @@ inputTelefone.addEventListener('input', (e) => {
         .replace(/(-\d{4})\d+?$/, '$1')
 })
 const exibeDadosPerfil = () =>{
-    fetch(`http://localhost:3000/usuarios/${id}`)
+    fetch(`https://arquivo-json-adopet.herokuapp.com/usuarios/${id}`)
     .then(response => {
         return response.json();
     })
@@ -52,7 +52,7 @@ btnSalvarInfo.addEventListener('click', () => {
             "sobre": inputSobre.value
           }
     }
-    fetch(`http://localhost:3000/usuarios/${id}`, {
+    fetch(`https://arquivo-json-adopet.herokuapp.com/usuarios/${id}`, {
         method: 'PATCH',
         headers: {"Content-Type": "application/json"},
         body:  JSON.stringify(userInfo)
