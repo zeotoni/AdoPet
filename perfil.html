@@ -20,7 +20,7 @@
         <div class="cabecalho__menu">
             <a href="#"><img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-barra__menu"></a>
             <a href="index.html" class="icone-home"><img src="./assets/img/Casa.png" alt="Ícone de casa"></a>
-            <a href="mensagem.html" class="icone-mensagem"><img src="./assets/img/Mensagens.svg" alt="Ícone de mensagem"></a>
+            <a data-icone-msg="icone-msg" class="icone-mensagem"><img src="./assets/img/Mensagens.svg" alt="Ícone de mensagem"></a>
         </div>
         <a class="icone-perfil"><img src="./assets/img/perfil.png" alt="Ícone de perfil"></a>
     </header>
@@ -32,7 +32,7 @@
                 <label for="foto">Foto</label>
                 <div class="input-foto">
                     <label id="label-foto__perfil">
-                        <input type="file">
+                        <input type="file" accept="image/*">
                         <figure class="personal-figure">
                             <img src="./assets/img/perfil-imagem.png" alt="Foto de ferfil" class="foto-perfil">
                         </figure>
@@ -41,22 +41,22 @@
                 </div>
                 <div class="input-nome">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Joana Magalhães" required>
+                    <input type="text" data-nome="nome" id="nome" placeholder="Joana Magalhães" required>
                 </div>
                 <div class="input-telefone">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" placeholder="55 11 XXXXXXXXX" required>
+                    <input type="tel" data-tel="telefone" id="telefone" placeholder="55 11 XXXXXXXXX" required>
                 </div>
                 <div class="input-cidade">
                     <label for="cidade">Cidade</label>
-                    <input type="text" id="nome-animal" placeholder="São Paulo" required>
+                    <input type="text" data-cidade="cidade" id="nome-animal" placeholder="São Paulo" required>
                 </div>
                 <div class="input-sobre">
                     <label for="msg">Sobre</label>
-                    <textarea name="input-sobre" id="input-mensagem" cols="30" rows="10" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." required></textarea>
+                    <textarea name="input-sobre" id="input-mensagem" cols="30" rows="10" placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati." data-sobre="info-sobre"  required></textarea>
                 </div>
                 <div id="botao__mensagem"">
-                    <button class="botao botao-mensagem">Salvar</button>
+                    <button class="botao botao-mensagem" data-btn-info="btn-salvar-info">Salvar</button>
                 </div>
             </form>
         </section>

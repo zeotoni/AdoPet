@@ -30,30 +30,28 @@ inputSenha.addEventListener('blur', () => {
     
 })
 
+export default  function mostraSenha(input,iconeOlho) {
 
-olhoSenha.addEventListener('click', ()=> {
-
-    if(inputSenha.type === 'password') {
-        inputSenha.setAttribute("type", "text");
-        olhoSenha.setAttribute("src", "./assets/img/eye.svg")
+    if(input.type === 'password') {
+        input.setAttribute("type", "text");
+        iconeOlho.setAttribute("src", "./assets/img/eye.svg")
 
     }else {
-        inputSenha.setAttribute("type", "password");
-        olhoSenha.setAttribute("src", "./assets/img/eye-closed.svg")
+        input.setAttribute("type", "password");
+        iconeOlho.setAttribute("src", "./assets/img/eye-closed.svg")
     }
+}
+
+olhoSenha.addEventListener('click', ()=> {
+    mostraSenha(inputSenha, olhoSenha);
 })
 
 
+
 olhoConfirmar.addEventListener('click', ()=> {
-
-    if(inputSenhaConfirmar.type === 'password') {
-        inputSenhaConfirmar.setAttribute("type", "text");
-        olhoConfirmar.setAttribute("src", "./assets/img/eye.svg")
-
-    }else {
-        inputSenhaConfirmar.setAttribute("type", "password");
-        olhoConfirmar.setAttribute("src", "./assets/img/eye-closed.svg")
-    }
+    
+    mostraSenha(inputSenhaConfirmar, olhoConfirmar);
+    
 })
 
 inputSenhaConfirmar.addEventListener('blur', ()=> {
@@ -73,7 +71,13 @@ formCadastro.addEventListener('submit', ()=> {
     let jsonArr = {
         "emailSv": inputEmail.value, 
         "nomeSv": inputNome.value, 
-        "senhaSv": inputSenha.value
+        "senhaSv": inputSenha.value,
+        "infoPerfilSv": {
+            "nome": "",
+            "telefone": "",
+            "cidade": "",
+            "sobre": ""
+          }
     }
     
     const url = `http://localhost:3000/usuarios`;
@@ -89,3 +93,5 @@ formCadastro.addEventListener('submit', ()=> {
     )
     .catch(error => console.log(error))
 }) 
+
+// export default mostraSenha;

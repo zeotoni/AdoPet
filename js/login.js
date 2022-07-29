@@ -1,3 +1,5 @@
+// import defaults from "json-server/lib/server/defaults";
+import defaulExport from './cadastro.js'
 
 const inputEmail = document.querySelector('[data-email]');
 const inputSenha = document.querySelector('[data-senha]');
@@ -30,15 +32,7 @@ inputSenha.addEventListener('blur', () => {
 })
 
 olhoSenha.addEventListener('click', ()=> {
-
-    if(inputSenha.type === 'password') {
-        inputSenha.setAttribute("type", "text");
-        olhoSenha.setAttribute("src", "./assets/img/eye.svg")
-
-    }else {
-        inputSenha.setAttribute("type", "password");
-        olhoSenha.setAttribute("src", "./assets/img/eye-closed.svg")
-    }
+    mostraSenha(inputSenha, olhoSenha);
 })
 
 const formLogin = document.querySelector('[data-form-login]');
