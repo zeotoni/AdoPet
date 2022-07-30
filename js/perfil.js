@@ -12,6 +12,7 @@ const inputCidade = document.querySelector('[data-cidade]');
 const inputSobre = document.querySelector('[data-sobre]');
 
 const btnSalvarInfo = document.querySelector('[data-btn-info]')
+const msgSucess = document.querySelector('[data-msg-sucess]')
 
 inputTelefone.addEventListener('input', (e) => {
     e.target.value = inputTelefone.value
@@ -57,10 +58,10 @@ btnSalvarInfo.addEventListener('click', (e) => {
         body:  JSON.stringify(userInfo)
     })
     .then(response => {
-        return response.json();
-    })
-    .then(response => {
-        console.log(response)
+        if(response.status === 200 || response.status === 2001) {
+            msgSucess.setAttribute("style", "display: block")
+        }
     })
     .catch(error => console.log(error))
+
 })
