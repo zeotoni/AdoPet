@@ -1,4 +1,4 @@
-
+import {mostraSenha} from './validacao.js'
 const inputEmail = document.querySelector('[data-email]');
 const inputSenha = document.querySelector('[data-senha]');
 const msgErro = document.querySelector('[data-msg-erro]')
@@ -31,14 +31,15 @@ inputSenha.addEventListener('blur', () => {
 
 olhoSenha.addEventListener('click', ()=> {
 
-    if(inputSenha.type === 'password') {
-        inputSenha.setAttribute("type", "text");
-        olhoSenha.setAttribute("src", "./assets/img/eye.svg")
+   mostraSenha(inputSenha, olhoSenha)
+    // if(inputSenha.type === 'password') {
+    //     inputSenha.setAttribute("type", "text");
+    //     olhoSenha.setAttribute("src", "./assets/img/eye.svg")
 
-    }else {
-        inputSenha.setAttribute("type", "password");
-        olhoSenha.setAttribute("src", "./assets/img/eye-closed.svg")
-    }
+    // }else {
+    //     inputSenha.setAttribute("type", "password");
+    //     olhoSenha.setAttribute("src", "./assets/img/eye-closed.svg")
+    // }
 })
 
 const formLogin = document.querySelector('[data-form-login]');
