@@ -40,6 +40,7 @@ const exibeDadosPerfil = () =>{
         inputCidade.value = infoPerfil.cidade;
         inputSobre.value = infoPerfil.sobre
     })
+    .catch(error => console.log(error))
 }
 
 btnSalvarInfo.addEventListener('click', () => {
@@ -63,4 +64,9 @@ btnSalvarInfo.addEventListener('click', () => {
     .then(response => {
         console.log(response)
     })
+    .catch(error => console.log(error))
+    window.location.href = `perfil.html?id=${id}`;
 })
+
+
+// `https://arquivo-json-adopet.herokuapp.com/usuarios/${id}`
