@@ -27,14 +27,12 @@ const exibeDadosPerfil = () =>{
         return response.json();
     })
     .then(response => {
-        console.log(response)
         let infoPerfil = {
             nome: response.infoPerfilSv.nome,
             cidade: response.infoPerfilSv.cidade,
             telefone: response.infoPerfilSv.telefone,
             sobre: response.infoPerfilSv.sobre
         }
-        console.log(infoPerfil)
         inputNome.value = infoPerfil.nome;
         inputTelefone.value = infoPerfil.telefone;
         inputCidade.value = infoPerfil.cidade;
@@ -43,8 +41,8 @@ const exibeDadosPerfil = () =>{
     .catch(error => console.log(error))
 }
 
-btnSalvarInfo.addEventListener('click', () => {
-
+btnSalvarInfo.addEventListener('click', (e) => {
+    e.preventDefault();
     let userInfo = {
         "infoPerfilSv": {
             "nome": inputNome.value,
@@ -65,8 +63,4 @@ btnSalvarInfo.addEventListener('click', () => {
         console.log(response)
     })
     .catch(error => console.log(error))
-    window.location.href = `perfil.html?id=${id}`;
 })
-
-
-// `https://arquivo-json-adopet.herokuapp.com/usuarios/${id}`
