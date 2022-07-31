@@ -15,38 +15,36 @@
     <link rel="stylesheet" href="./assets/css/style-tablet.css">
     <link rel="stylesheet" href="./assets/css/style-desktop.css">
 </head>
-<body class="container">
+<body class="background">
     <header>
         <div class="cabecalho__menu">
-            <a href="#"><img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-barra__menu"></a>
+            <img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-barra__menu">
             <a href="index.html" class="icone-home"><img src="./assets/img/Casa.png" alt="Ícone de casa"></a>
             <a class="icone-mensagem"><img src="./assets/img/Mensagens.svg" alt="Ícone de mensagem"></a>
         </div>
         <a class="icone-perfil" data-icone-perfil="icone-perfil"><img src="./assets/img/perfil.png" alt="Ícone de perfil"></a>
     </header>
     <main>
-        <p class="texto-mensagem">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</p>
+        <h3 class="titulo-mensagem">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</h3>
         <section class="form-container">
-            <form action="#" class=" form formulario-mensagem" data-form-mensagem="formulario-mensagem">
-                <div class="input-nome">
+            <form action="#" class=" form" data-form-mensagem="formulario-mensagem">
+                <div>
                     <label for="nome">Nome</label>
-                    <input type="text" data-tipo="nome" id="nome" placeholder="Insira seu nome completo" required>
+                    <input type="text" data-tipo="nome" placeholder="Insira seu nome completo" required>
                 </div>
-                <div class="input-telefone">
+                <div>
                     <label for="telefone">Telefone</label>
-                    <input type="tel" data-tipo="telefone" id="telefone" placeholder="Insira seu telefone e/ou whatsapp" title="Formato de telefone inválido" pattern="^(?:(?:\+|00)?(55)\s?)?(?:(?:\(?[1-9][0-9]\)?)?\s?)?(?:((?:9\d|[2-9])\d{3})-?(\d{4}))$" required>
+                    <input type="tel" data-tipo="telefone" placeholder="Insira seu telefone e/ou whatsapp" title="Formato de telefone inválido" pattern="^(?:(?:\+|00)?(55)\s?)?(?:(?:\(?[1-9][0-9]\)?)?\s?)?(?:((?:9\d|[2-9])\d{3})-?(\d{4}))$" required>
                 </div>
-                <div class="input-nome__animal">
+                <div>
                     <label for="nome do animal">Nome do animal</label>
-                    <input type="text" data-tipo="nome-animal" id="nome-animal" placeholder="Por qual animal você se interessou?" required>
+                    <input type="text" data-tipo="nome-animal" placeholder="Por qual animal você se interessou?" required>
                 </div>
-                <div class="input-mensagem">
+                <div>
                     <label for="msg">Mensagem</label>
                     <textarea name="input-mensagem" data-tipo="mensagem" id="input-mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem" required></textarea>
                 </div>
-                <div id="botao__mensagem"">
-                    <button type="submit" class="botao botao-mensagem" data-btn="botao-mensagem">Enviar</button>
-                </div>
+                <button type="submit" class="botao botao-mensagem" data-btn="botao-mensagem">Enviar</button>
                 <p class="msg-sucesso" data-msg-sucess="msg-sucesso">Mensagem enviada com sucesso</p>
             </form>
         </section>
@@ -54,5 +52,5 @@
     <footer class="rodape">
         <p>2022-Desenvolvido por Alura.</p>
     </footer>
-    <script src="./js/mensagem.js"></script>
+    <script src="./js/mensagem.js" type="module"></script>
 </body>

@@ -10,13 +10,13 @@
         background-color: #3772FF;
     }
 
-    .container-login {
+    .background-tela__cadastro-login {
         background: url(../img/vetor-login.png), url(../img/vetor2-login.png);
         background-position: top left, left 368px;
         background-repeat: no-repeat;
     }
 
-    .container {
+    .background {
         background: url(../img/vetor1.svg);
         background-repeat: no-repeat;
         background-size: 352.11px;
@@ -83,7 +83,7 @@
         display: none;
     }
 
-    .container-btn__login {
+    .container-btn__tela-inicio {
         display: flex;
         flex-direction: column;
     }
@@ -124,7 +124,7 @@
 
     /* ...tela de mensagem */
 
-    .texto-mensagem {
+    .titulo-mensagem {
         margin: 0 auto;
         padding: 48px 0 24px 0;
         width: 226px;
@@ -146,6 +146,7 @@
 
     .form {
         padding: 17px 16px;
+        text-align: center;
     }
 
     .form label{
@@ -197,19 +198,15 @@
         border-color: #808080;
     }
 
-    #botao__mensagem {
-        padding: 40px 24px 24px 24px;
-        text-align: center;
-    }
-
     .botao-mensagem {
         width: 148px;
         height: 40px;
+        margin: 40px 0 24px 0;
     }
 
     /* .....Página perfil...... */
 
-    .texto-perfil {
+    .titulo-perfil {
         width: 247px;
         margin: 0 auto;
         padding: 48px 0 24px 0;
@@ -221,7 +218,7 @@
         text-align: center;
     }
 
-    .titulo__perfil {
+    .titulo__form-perfil {
         text-align: center;
         font-weight: 600;
         font-size: 21px;
@@ -239,7 +236,6 @@
 
     #label-foto__perfil {
         padding: 0;
-        cursor: pointer;
     }
 
     .personal-figure {
@@ -267,7 +263,7 @@
 
     /* .....Pagina Login..... */ 
 
-    .logo-login {
+    .logo__cadastro-login {
         padding: 40px 0;
         width: 142.54px;
         height: 34.36px;
@@ -282,11 +278,11 @@
         padding: 16px 0 45px 0;
     }
 
-    .area-login {
+    .form__login-cadastro {
         text-align: center;
     }
 
-    .area-login label{
+    .form__login-cadastro label{
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -304,7 +300,7 @@
         color: #737380;
     }
 
-    .area-login input {
+    .form__login-cadastro input {
         box-sizing: border-box;
         width: 312px;
         height: 40px;
@@ -315,20 +311,16 @@
         border: 1px solid #FFFFFF;
         padding-left: 10px;
     }
-
-    /* .input-:focus {
-    } */
     
     input:focus {
         border: 1px solid #808080 ;
-
     }
 
     textarea:focus {
         border: 1px solid #808080 ;
     }
 
-    .area-login ::placeholder {
+    .form__login-cadastro ::placeholder {
         text-align: center;
         font-weight: 400;
         font-size: 14px;
@@ -337,10 +329,11 @@
         color: #BCBCBC;
     }
 
-    .link-senha {
+    .container__recuperar-senha {
         text-align: center;
         padding: 15px 0 32px 0;
     }
+
     .msg-erro {
         text-align: center;
         color: #FFFFFF;
@@ -428,7 +421,6 @@
     .titulo-home br {
         display: none;
     }
-
 
     .adocao__ficha {
         opacity: 100%;

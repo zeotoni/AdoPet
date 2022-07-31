@@ -11,13 +11,13 @@
         background-color: #3772FF;
     }
     
-    .container-login {
+    .background-tela__cadastro-login {
         background: url(../img/vetor1.svg), url(../img/Patas.svg), url(../img/vetor2.svg);
         background-position: top left, top right, right 265px;
         background-repeat: no-repeat;
     }
     
-    .container {
+    .background {
         background: url(../img/vetor1.svg), url(../img/vetor2.svg);
         background-position: top left, right 265px;
         background-repeat: no-repeat;
@@ -78,7 +78,6 @@
         height: 431.63px;
         top: 37px;
     }
-    
 
     .rodape {
         padding: 45px 0;
@@ -86,7 +85,7 @@
 
     /* ...tela de mensagem */
 
-    .texto-mensagem {
+    .titulo-mensagem {
         padding: 90px 0 40px 0;
         width: 492px;
     }
@@ -100,20 +99,14 @@
         width: 164px;
     }
 
-    #botao__mensagem {
-        padding: 32px;
-        text-align: center;
-    }
-
-
     /* .....Página perfil...... */
 
-    .texto-perfil {
+    .titulo-perfil {
         width: 552px;
         padding: 90px 0 32px 0;
     }
 
-    .titulo__perfil {
+    .titulo__form-perfil{
         padding-top: 32px;
     }
 
@@ -137,7 +130,6 @@
         left: 204px;
     }
     
-    
     .foto-perfil__alterar {
         padding-top: 5px;
     }
@@ -145,7 +137,7 @@
     /* .....Pagina Login..... */ 
 
 
-    .logo-login {
+    .logo__cadastro-login {
         width: 260px;
         height: 64px;
         padding: 0 0 64px 0;
@@ -156,7 +148,7 @@
         padding: 0 0 72px 0;
     }
 
-    .area-login {
+    .form__login-cadastro {
         text-align: center;
     }
 
@@ -174,17 +166,12 @@
         top: 521px;
     }
 
-    .area-login input {
+    .form__login-cadastro input {
         width: 552px;    
-    }
-
-    .alinhamento-botao{
-        text-align: center;
     }
 
     .botao-logar {
         width: 174px;
-        /* margin: 8px 598px 352px 598px; */
     }
 
     /* .....Página cadastro...... */
@@ -209,7 +196,6 @@
 
     .botao-cadastrar {
         width: 174px;
-        /* margin: 45px 553px 180px 553px; */
     }
 
     /* .....Página home..... */

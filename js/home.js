@@ -37,36 +37,22 @@ const exibeCards = () => {
                     </address>
                 </div>
             </li> `;
-            document.querySelector('#lista-pets').appendChild(cardNovo)
+            document.querySelector('[data-lista="lista-pets"]').appendChild(cardNovo)
             
         });
     })
+    .catch(error => console.log(error))
 }
 const pegaUrl = new URL(window.location);
 const id = pegaUrl.searchParams.get('id');
 
 const iconePerfil = document.querySelector('[data-icone-perfil]');
+const iconeMsg = document.querySelector('[data-icone-msg]');
+
 iconePerfil.addEventListener('click', () => {
     window.location.href = `perfil.html?id=${id}`;
 })
 
-const iconeMsg = document.querySelector('[data-icone-msg]');
 iconeMsg.addEventListener('click', () => {
     window.location.href = `mensagem.html?id=${id}`;
 })
-
-
-// function exibeInfosPessoais(id) {
-//     fetch(`http://localhost:3000/usuarios/${id}`)
-//     .then(response => {
-//         return response.json()
-//     })
-//     .then(response => {
-//         console.log(response)
-//         // let userInfo = {
-
-//         // }
-//     })
-// } 
-
-// exibeInfosPessoais(id);

@@ -1,3 +1,13 @@
+import { validaInput } from "./validacao.js";
+
+const pegaUrl = new URL(window.location);
+const id = pegaUrl.searchParams.get('id');
+
+const iconePerfil = document.querySelector('[data-icone-perfil]');
+iconePerfil.addEventListener('click', () => {
+    window.location.href = `perfil.html?id=${id}`;
+})
+
 const tel = document.querySelector('[data-tipo="telefone"]');
 const nome = document.querySelector('[data-tipo="nome"]');
 const nomeAnimal = document.querySelector('[data-tipo="nome-animal"]');
@@ -16,14 +26,8 @@ tel.addEventListener('input', (e) => {
 })
 
 tel.addEventListener('blur', ()=> {
-    let telValido = tel.attributes.pattern;
-    if(!tel.value === telValido) {
-        tel.setCustomValidity("Formato de telefone inválido")
-    }else {
-        tel.setCustomValidity("");
-    }
+    validaInput(tel, tel.attributes.pattern, "Formato de telefone inválido")
 })
-
 
 formMensagem.addEventListener('submit', (e)=> {
     e.preventDefault();
@@ -34,11 +38,3 @@ formMensagem.addEventListener('submit', (e)=> {
     msgSucess.setAttribute("style", "display: block")
 })
 
-const pegaUrl = new URL(window.location);
-const id = pegaUrl.searchParams.get('id');
-console.log(id)
-
-const iconePerfil = document.querySelector('[data-icone-perfil]');
-iconePerfil.addEventListener('click', () => {
-    window.location.href = `perfil.html?id=${id}`;
-})

@@ -1,45 +1,22 @@
 import {mostraSenha} from './validacao.js'
+import { validaInput } from './validacao.js';
+
 const inputEmail = document.querySelector('[data-email]');
 const inputSenha = document.querySelector('[data-senha]');
 const msgErro = document.querySelector('[data-msg-erro]')
 
-const olhoSenha = document.querySelector('#olho-senha');
+const olhoSenha = document.querySelector('[data-icone-olho="olho-senha"]');
 
 inputEmail.addEventListener('blur', ()=>{
-    const emailDigitado = inputEmail.value;
-    const emailValidado = emailDigitado.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
-    if(emailValidado) {
-        inputEmail.setCustomValidity("");
-        return
-    } else {
-       inputEmail.setCustomValidity("Esse formato de email não é válido");
-    }
+    validaInput(inputEmail, /^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Esse formato de email não é válido")
 })
 
 inputSenha.addEventListener('blur', () => {
-    
-    const senhaDigitada = inputSenha.value;
-    const senhaValidada = senhaDigitada.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$/);
-    if(senhaValidada) {
-        inputSenha.setCustomValidity("")
-        return
-    } else {
-        inputSenha.setCustomValidity("Formato de senha inválido")
-    }
-    
+    validaInput(inputSenha, /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$/, "Formato de senha inválido") 
 })
 
 olhoSenha.addEventListener('click', ()=> {
-
    mostraSenha(inputSenha, olhoSenha)
-    // if(inputSenha.type === 'password') {
-    //     inputSenha.setAttribute("type", "text");
-    //     olhoSenha.setAttribute("src", "./assets/img/eye.svg")
-
-    // }else {
-    //     inputSenha.setAttribute("type", "password");
-    //     olhoSenha.setAttribute("src", "./assets/img/eye-closed.svg")
-    // }
 })
 
 const formLogin = document.querySelector('[data-form-login]');
@@ -77,10 +54,8 @@ formLogin.addEventListener('submit', (e) => {
             inputSenha.setAttribute("style", "border-color: red")
             msgErro.setAttribute("style", "display: block")
             inputEmail.focus();
-        }
-        
+        }  
     }) 
-
-
+    .catch(error => console.log(error))
 })
 
