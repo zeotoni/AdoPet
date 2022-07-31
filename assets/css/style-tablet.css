@@ -14,18 +14,21 @@
     .background-tela__cadastro-login {
         background: url(../img/vetor1.svg), url(../img/Patas.svg), url(../img/vetor2.svg);
         background-position: top left, top right, right 265px;
+        background-size: 560px, 224px, 134.45px;
         background-repeat: no-repeat;
     }
     
     .background {
         background: url(../img/vetor1.svg), url(../img/vetor2.svg);
         background-position: top left, right 265px;
+        background-size: 560px, 134px;
         background-repeat: no-repeat;
     }
 
     .bkg__galeria {
         background: url(../img/vetor1.svg);
         background-position: top left;
+        background-size: 560px;
         background-repeat: no-repeat;
     }
       

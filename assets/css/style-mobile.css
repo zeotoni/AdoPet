@@ -11,8 +11,8 @@
     }
 
     .background-tela__cadastro-login {
-        background: url(../img/vetor-login.png), url(../img/vetor2-login.png);
-        background-position: top left, left 368px;
+        background: url(../img/Patas.svg), url(../img/vetor1.svg);
+        background-position: top right, top left;
         background-repeat: no-repeat;
     }
 
