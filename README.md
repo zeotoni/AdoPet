@@ -12,13 +12,11 @@
 <h2>Descrição</h2>
 <p>O desafio proposto em quatro semanas era criar um site onde o usuário pudesse se cadastrar, se logar na sua conta, salvar dados pessoais de endereço e perfil, vizualizar animais disponìveis para a adoção em várias cidades e, entrar em contato com o responsável pelo pet. Com o foco no conceito mobile first, o projeto foi estruturado no mobile e depois ajustado para telas maiores. Todo o site foi feito com HTML, CSS e JavaScrip. Para as validações de formulário, foi utilizado expressões regulares e, toda a estrutura de banco de dados, foi feita com uma fake REST API criada com JsonServer e hospedada no Heroku. Ficando salvos os dados dos clientes e dos pets sendo estes exibidos via listagem dinâmica por fetch direto da API.</p>
 
-  
-<div display="block">
-  <img src="https://user-images.githubusercontent.com/87879397/182039685-26109a1b-7bc6-4600-a6af-e4911a335735.png" width="300px">
-  
+<div display="flex">
+
+  <img src="https://user-images.githubusercontent.com/87879397/182042373-ec86ebf6-b225-4c11-98b7-9f9bb3b8225c.png">
+  <img src="https://user-images.githubusercontent.com/87879397/182042519-405cd8e5-676c-4787-86d0-e805f838e8df.png">
+
+  <img src="https://user-images.githubusercontent.com/87879397/182042404-57db3d93-55ce-4285-9219-a1b86c659d48.png">
+  <img src="https://user-images.githubusercontent.com/87879397/182042423-c92d3507-eae6-414e-8bfb-2f506518a01f.png">
 </div>
-<p display="block">
-  <img src="https://user-images.githubusercontent.com/87879397/182039872-cdce3000-89e7-4366-94e1-a2b378244e54.png" width="300px">
-  <img src="https://user-images.githubusercontent.com/87879397/182040335-f29056c7-8561-4280-975c-86fcd5891e4f.png">
-  <img src="https://user-images.githubusercontent.com/87879397/182040602-1fef8289-eeaa-4060-89c8-304e02002071.png">
-</p>
