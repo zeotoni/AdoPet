@@ -267,12 +267,18 @@
     .titulo-home br {
         display: block;
     }
+    
+    .secao-adocao {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
     .adocao__lista {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
         gap: 16px;
-        padding: 0 48px 32px 32px ;
+        margin: 0 32px 32px;
     }
     
     .adocao__ficha {
