@@ -218,10 +218,8 @@
     }
 
     .adocao__lista {
-        width: 1106px;
-        margin: 40px auto 60px auto;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 16px;
         padding: 0;
     }
