@@ -20,4 +20,7 @@
 </div>
 
 <h2>Acesso ao projeto</h2>
-- Acesse esse link do vercel: https://ado-pet-delta.vercel.app/
+
+* Para testar, acesse: https://ado-pet-delta.vercel.app/
+
+<br>Desenvolvido por www.linkedin.com/in/zeotoni
