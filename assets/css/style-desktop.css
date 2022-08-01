@@ -154,17 +154,21 @@
         text-align: center;
     }
 
+    .form-container__login-cadastro {
+        width: 55%;
+    }
+
     #input-senha__desktop {
-        width: 362px;
+        width: 50%;
     }
 
     #input-confirmar__desktop {
-        width: 362px;
+        width: 50%;
     }
 
     .olho-senha {
         position: absolute;
-        right: 515px;
+        right: calc(25% + 195px);
         top: 521px;
     }
 
@@ -186,13 +190,13 @@
 
     .olho-senha__cadastro {
         position: absolute;
-        right: 515px;
+        right: calc(25% + 195px);
         top: 653px;
     }
 
     .olho-senha__confirmar {
         position: absolute;
-        right: 515px;
+        right: calc(25% + 195px);
         top: 750px;
     }
 
