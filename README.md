@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
 </p>
 <h2>Visão geral <img src="https://img.shields.io/badge/trabalho-em%20progresso-brightgreen"></h2>
-<p>Olá<br>Bem vindos ao projeto Ado-Pet. Esse projeto foi desenvolvido no Alura Challenge Front-End e conta com o desafio de criar um site fictício de adoção de pets disponíveis em ONGs por todo o Brasil. Nesse repositório vocês verâo o meu resultado, bem como as ferramentas utilizadas por mim e minhas soluções para o desafio.</p>
+<p>Olá<br>Bem vindos ao projeto Ado-Pet. Esse projeto foi desenvolvido no Alura Challenge Front-End e conta com o desafio de criar um site fictício de adoção de pets disponíveis em ONGs por todo o Brasil. Nesse repositório vocês verão o meu resultado, bem como as ferramentas utilizadas por mim e minhas soluções para o desafio.</p>
 <h2>Descrição</h2>
 <p>O desafio proposto em quatro semanas era criar um site onde o usuário pudesse se cadastrar, se logar na sua conta, salvar dados pessoais de endereço e perfil, vizualizar animais disponìveis para a adoção em várias cidades e, entrar em contato com o responsável pelo pet. Com o foco no conceito mobile first, o projeto foi estruturado no mobile e depois ajustado para telas maiores. Todo o site foi feito com HTML, CSS e JavaScrip. Para as validações de formulário, foi utilizado expressões regulares e, toda a estrutura de banco de dados, foi feita com uma fake REST API criada com JsonServer e hospedada no Heroku. Ficando salvos os dados dos clientes e dos pets sendo estes exibidos via listagem dinâmica por fetch direto da API.</p>
 
@@ -28,7 +28,7 @@
 * Cadastro
 * Login
 * Validação de formulários
-* Listagem dinãmica da galeria de pets
+* Listagem dinâmica da galeria de pets
 * Edição de informaçôes de endereço e perfil
 * Responsividade 
 
