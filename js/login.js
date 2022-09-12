@@ -4,8 +4,12 @@ import { validaInput } from './validacao.js';
 const inputEmail = document.querySelector('[data-email]');
 const inputSenha = document.querySelector('[data-senha]');
 const msgErro = document.querySelector('[data-msg-erro]')
+const msgEmailErrado = document.querySelector('[data-erro-emailErrado]');
+const msgEmailVazio = document.querySelector('[data-erro-emailVazio]')
 
 const olhoSenha = document.querySelector('[data-icone-olho="olho-senha"]');
+
+const linkSenha = document.querySelector('[data-tipo]');
 
 inputEmail.addEventListener('blur', ()=>{
     validaInput(inputEmail, /^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Esse formato de email não é válido")
@@ -58,4 +62,56 @@ formLogin.addEventListener('submit', (e) => {
     }) 
     .catch(error => console.log(error))
 })
+
+linkSenha.addEventListener('click', (e)=> {
+    e.preventDefault();
+    trocaSenha();
+})
+
+const trocaSenha = ()=> {
+    if(!inputEmail.value) {
+        msgEmailVazio.setAttribute("style", "display: block");
+        inputEmail.setAttribute("style", "border-color: red");
+        inputEmail.focus();
+        
+    } else {
+        fetch(`https://arquivo-json-adopet.herokuapp.com/usuarios`)
+        .then(response => {
+            return response.json();
+        })
+        .then(response => {
+            let userValid = { 
+                email: "",
+                nome: "",
+                senha: "",
+                id: ""
+            }
+            response.forEach(element => {
+                if(inputEmail.value === element.emailSv) {
+                    userValid = {
+                        email: element.emailSv,
+                        nome: element.nomeSv,
+                        senha: element.senhaSv,
+                        id: element.id
+                    }
+                }
+            });
+            const id = userValid.id;
+            if(inputEmail.value === userValid.email) {
+                window.location.href = `novaSenha.html?id=${id}`;
+            
+            }else {
+                msgEmailErrado.setAttribute("style", "display: block");
+                msgEmailVazio.setAttribute("style", "display: none");
+                inputEmail.setAttribute("style", "border-color: red");
+                inputEmail.focus();
+            }  
+        }) 
+        .catch(error => console.log(error))
+
+    }
+
+       
+}
+
 

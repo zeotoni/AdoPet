@@ -365,12 +365,31 @@
         font-size: 12px;
         line-height: 24px;
         margin-top: 15px;
+        border: none;
+        background-color: #FFFFFF;
     }
 
     .botao-logar {
         width: 148px;
         height: 40px;
         margin: 0 108px 201px 108px;
+    }
+
+    /* .....Página mudar senha.... */
+
+    .titulo__nova-senha {
+        text-align: center;
+        font-weight: 400;
+        line-height: 21px;
+        font-size: 16px;
+        color: #3772FF;
+        padding: 16px 0 45px 0;
+    }
+
+    .botao__redefinir-senha {
+        width: 148px;
+        height: 40px;
+        margin: 32px 108px 201px 108px;
     }
 
     /* .....Página cadastro...... */

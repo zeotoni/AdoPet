@@ -11,8 +11,8 @@ const inputTelefone = document.querySelector('[data-tel]');
 const inputCidade = document.querySelector('[data-cidade]');
 const inputSobre = document.querySelector('[data-sobre]');
 
-const btnSalvarInfo = document.querySelector('[data-btn-info]')
-const msgSucess = document.querySelector('[data-msg-sucess]')
+const btnSalvarInfo = document.querySelector('[data-btn-info]');
+const msgSucess = document.querySelector('[data-msg-sucess]');
 
 inputTelefone.addEventListener('input', (e) => {
     e.target.value = inputTelefone.value

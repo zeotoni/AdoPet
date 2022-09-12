@@ -27,31 +27,25 @@
         <div class="container-logo">
             <img src="./assets/img/logo-azul.svg" alt="Logo da adopet" class="logo__cadastro-login">
         </div>
-        <h3 class="titulo-login">Já tem conta? Faça seu login:</h3>
+        <h3 class="titulo__nova-senha">Defina uma nova senha</h3>
         <form class="form__login-cadastro " data-form-login="formulario-login">
             <fieldset class="form-container__login-cadastro">
                 <div>
-                    <label for="email">Email</label>
-                    <input class="input-" type="email" placeholder="Insira seu email" data-email="email" required>
+                    <label for="senha">Senha</label>
+                    <input  type="text" placeholder="Crie uma senha"  data-senha="senha" required>
                 </div>
                 <div>
                     <label for="senha">Senha</label>
-                    <input class="input-" type="password" placeholder="Insira sua senha" id="input-senha__desktop" data-senha="senha" required>
-                    <img src="./assets/img/eye-closed.svg" alt="Olho clicável para vizualizar senha" data-icone-olho="olho-senha" class="olho olho-senha">
+                    <input  type="text" placeholder="Repita a senha criada acima"  data-senha-confirmar="senha-confirmar" required>
                 </div>
-                <p class="msg-erro" data-msg-erro="msg-erro">Usuario ou senha incorretos!</p>
+                <p class="msg-sucesso" data-msg-sucess="msg-sucesso">Senha alterada com sucesso!</p>
             </fieldset>
-            <div class="container__recuperar-senha">
-                <button class="recuperar-senha" data-tipo="recriar-senha">Esqueci minha senha</button>
-                <p class="msg-erro" data-erro-emailErrado="msg-erroErrado">"Não existe usuário cadastrado com esse email!"</p>
-                <p class="msg-erro" data-erro-emailVazio="msg-emailVazio">"Você precisa inserir um email válido no campo para mudar a senha!"</p>
-            </div>
-            <button type="submit" class="botao botao-logar" id="botao-logar">Entrar</button>
+            <button type="submit" class="botao botao__redefinir-senha" data-mudar-senha="mudar-senha">Definir</button>
         </form>
     </main>
     <footer class="rodape">
         <p>2022-Desenvolvido por Ezequiel Otoni.</p>
     </footer>
-    <script src="./js/login.js" type="module"></script>
+    <script src="./js/mudarSenha.js" type="module"></script>
 </body>
 </html>
