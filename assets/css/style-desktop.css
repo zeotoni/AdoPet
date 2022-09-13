@@ -101,6 +101,11 @@
         width: 164px;
     }
 
+    .botao-mensagem:hover {
+        padding: 16px;
+        width: 180px;
+    }
+
     /* .....Página perfil...... */
 
     .titulo-perfil {
@@ -186,6 +191,23 @@
         width: 174px;
     }
 
+    .botao-logar:hover {
+        padding: 16px;
+        width: 190px;
+    }
+
+    /* .....Página mudar senha.... */
+
+
+    .botao__redefinir-senha {
+        width: 174px;
+    }
+
+    .botao__redefinir-senha:hover {
+        padding: 16px;
+        width: 190px;
+    }
+
 
     /* .....Página cadastro...... */
 
@@ -209,6 +231,11 @@
 
     .botao-cadastrar {
         width: 174px;
+    }
+
+    .botao-cadastrar:hover {
+        padding: 16px;
+        width: 190px;
     }
 
     /* .....Página home..... */

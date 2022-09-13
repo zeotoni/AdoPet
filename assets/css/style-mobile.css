@@ -91,14 +91,14 @@
     .botao__login {
         margin: 0 auto;
         width: 180px;
-        height: 40px;  
         margin-bottom: 18px;     
+        padding: 12px 0;
     }
 
     .botao__cadastro {
         margin: 0 auto;
         width: 180px;
-        height: 40px;
+        padding: 12px 0;
         margin-bottom: 18px; 
     }
 
@@ -200,7 +200,7 @@
 
     .botao-mensagem {
         width: 148px;
-        height: 40px;
+        padding: 10px 0;
         margin: 40px 0 24px 0;
     }
 
@@ -371,7 +371,7 @@
 
     .botao-logar {
         width: 148px;
-        height: 40px;
+        padding: 10px 0;
         margin: 0 108px 201px 108px;
     }
 
@@ -388,9 +388,10 @@
 
     .botao__redefinir-senha {
         width: 148px;
-        height: 40px;
+        padding: 10px 0;
         margin: 32px 108px 201px 108px;
     }
+
 
     /* .....Página cadastro...... */
 
@@ -420,7 +421,7 @@
 
     .botao-cadastrar {
         width: 148px;
-        height: 40px;
+        padding: 10px 0;
         margin: 40px 108px;
     }
 

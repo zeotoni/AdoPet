@@ -89,12 +89,12 @@
 
     .botao__login {
         width: 344px;
-        height: 48px;
+        padding: 16px 0;
     }
 
     .botao__cadastro {
         width: 344px;
-        height: 48px;
+        padding: 16px 0;
     }
 
     .ilustracao-tela__inicio {
@@ -234,6 +234,17 @@
         width: 164px;
         margin: 8px 302px 438px 302px;
     }
+
+     /* .....Página mudar senha.... */
+
+     .titulo__nova-senha {
+        font-size: 18px;
+    }
+
+    .botao__redefinir-senha {
+        width: 164px;
+    }
+
 
     /* .....Página cadastro...... */
 
