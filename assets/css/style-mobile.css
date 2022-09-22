@@ -392,6 +392,21 @@
         margin: 32px 108px 201px 108px;
     }
 
+    .botao__redefinir-logar {
+        display: none;
+        text-align: center;
+        color: #FC7071;
+        position: relative;
+        top: 11px;
+        font-size: 18px;
+    }
+
+    .input-mensagem-erro {
+        display: block;
+        margin-top: 10px;
+        color: #FC7071;
+    }
+
 
     /* .....Página cadastro...... */
 

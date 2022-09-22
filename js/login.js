@@ -1,15 +1,15 @@
 import {mostraSenha} from './validacao.js'
 import { validaInput } from './validacao.js';
 
-const inputEmail = document.querySelector('[data-email]');
-const inputSenha = document.querySelector('[data-senha]');
+const inputEmail = document.querySelector('[data-tipo="email"]');
+const inputSenha = document.querySelector('[data-tipo="senha"]');
 const msgErro = document.querySelector('[data-msg-erro]')
 const msgEmailErrado = document.querySelector('[data-erro-emailErrado]');
 const msgEmailVazio = document.querySelector('[data-erro-emailVazio]')
 
 const olhoSenha = document.querySelector('[data-icone-olho="olho-senha"]');
 
-const linkSenha = document.querySelector('[data-tipo]');
+const linkSenha = document.querySelector('[data-tipo="esqueci-senha"]');
 
 inputEmail.addEventListener('blur', ()=>{
     validaInput(inputEmail, /^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Esse formato de email não é válido")

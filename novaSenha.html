@@ -28,18 +28,21 @@
             <img src="./assets/img/logo-azul.svg" alt="Logo da adopet" class="logo__cadastro-login">
         </div>
         <h3 class="titulo__nova-senha">Defina uma nova senha</h3>
-        <form class="form__login-cadastro " data-form-login="formulario-login">
+        <form class="form__login-cadastro ">
             <fieldset class="form-container__login-cadastro">
                 <div>
                     <label for="senha">Senha</label>
-                    <input  type="text" placeholder="Crie uma senha"  data-senha="senha" required>
+                    <input  type="text" placeholder="Crie uma senha"  data-tipo="senha">
+                    <span class="input-mensagem-erro"></span>
                 </div>
                 <div>
                     <label for="senha">Senha</label>
-                    <input  type="text" placeholder="Repita a senha criada acima"  data-senha-confirmar="senha-confirmar" required>
+                    <input  type="text" placeholder="Repita a senha criada acima"  data-tipo="senha-confirmar">
+                    <span class="input-mensagem-erro"></span>
                 </div>
                 <p class="msg-sucesso" data-msg-sucess="msg-sucesso">Senha alterada com sucesso!</p>
             </fieldset>
+            <a href="./login.html" class="botao__redefinir-logar" data-tipo="redefinir-logar">Logar</a>
             <button type="submit" class="botao botao__redefinir-senha" data-mudar-senha="mudar-senha">Definir</button>
         </form>
     </main>

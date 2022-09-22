@@ -25,6 +25,12 @@
         background-repeat: no-repeat;
     }
 
+    .botao:hover {
+        padding: 20px 14px;
+        transition: 0.5s;
+        text-decoration: underline;
+    }
+
 
     /* ....Tela Inicial..... */
 
@@ -201,11 +207,23 @@
 
     .botao__redefinir-senha {
         width: 174px;
+        margin: 45px 108px 201px 108px;
     }
 
     .botao__redefinir-senha:hover {
         padding: 16px;
         width: 190px;
+    }
+
+    .botao__redefinir-logar {
+        text-decoration: none;
+        top: 17px;
+    }
+
+    .botao__redefinir-logar:hover {
+      font-size: 24px;
+      transition: 0.5s;
+      text-decoration: underline;
     }
 
 

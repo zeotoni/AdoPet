@@ -64,5 +64,4 @@ btnSalvarInfo.addEventListener('click', (e) => {
         }
     })
     .catch(error => console.log(error))
-
 })

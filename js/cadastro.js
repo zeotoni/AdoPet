@@ -1,10 +1,10 @@
 import {mostraSenha} from './validacao.js';
-import { validaInput } from './validacao.js';
+import {validaInput } from './validacao.js';
 
-const inputEmail = document.querySelector('[data-email]');
-const inputNome = document.querySelector('[data-nome="nome"]');
-const inputSenha = document.querySelector('[data-senha]');
-const inputSenhaConfirmar = document.querySelector('[data-senha-confirmar="senha-confirmar"]');
+const inputEmail = document.querySelector('[data-tipo="email"]');
+const inputNome = document.querySelector('[data-tipo="nome"]');
+const inputSenha = document.querySelector('[data-tipo="senha"]');
+const inputSenhaConfirmar = document.querySelector('[data-tipo="senha-confirmar"]');
 
 const olhoSenha = document.querySelector('[data-icone-olho="olho-senha"]');
 const olhoConfirmar = document.querySelector('[data-icone-olho="olho-confirmar"]');
@@ -21,7 +21,6 @@ inputSenha.addEventListener('blur', () => {
 olhoSenha.addEventListener('click', ()=> {
     mostraSenha(inputSenha, olhoSenha)
 });
-
 
 olhoConfirmar.addEventListener('click', ()=> {
     mostraSenha(inputSenhaConfirmar, olhoConfirmar)
