@@ -8,6 +8,7 @@ iconeMsg.addEventListener('click', () => {
 
 const inputImg = document.querySelector('[data-input-foto]')
 const imgPerfil = document.querySelector('[data-img-perfil]')
+const perfilHeader = document.querySelector('[data-icone-perfil]')
 const inputNome = document.querySelector('[data-nome]');
 const inputTelefone = document.querySelector('[data-tel]');
 const inputCidade = document.querySelector('[data-cidade]');
@@ -42,7 +43,8 @@ const exibeDadosPerfil = () =>{
         inputTelefone.value = infoPerfil.telefone;
         inputCidade.value = infoPerfil.cidade;
         inputSobre.value = infoPerfil.sobre,
-        imgPerfil.src = infoPerfil.imagem
+        imgPerfil.src = infoPerfil.imagem,
+        perfilHeader.src = infoPerfil.imagem
     })
     .catch(error => console.log(error))
 }
@@ -61,6 +63,7 @@ inputImg.addEventListener('change', function() {
         lerArquivo.onload = function(e) {
             imgBase64 = e.target.result;
             imgPerfil.src = imgBase64;
+            perfilHeader.src = imgBase64;
         }
 
         lerArquivo.readAsDataURL(imagemSelecionada)

@@ -43,10 +43,10 @@
 
     .icone-perfil {
         position: absolute;
-        width: 40px;
         height: 40px;
         right: 37px;
         top: 40px;
+        border-radius: 100%;
     }
 
     .container-logo {
