@@ -136,13 +136,6 @@
         cursor: pointer;
     }
     
-    .personal-figure {
-        position: relative;
-        width: 80px;
-        height: 80px;
-        left: 204px;
-    }
-    
     .foto-perfil__alterar {
         padding-top: 5px;
     }
