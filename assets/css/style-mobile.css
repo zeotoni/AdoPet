@@ -240,18 +240,23 @@
 
     .personal-figure {
         position: relative;
-        width: 120px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         left: 78px;
+        border: 1px solid #36D6AD;
+        border-radius: 50%;
     }
 
     .foto-perfil {
         box-sizing: border-box;
         border-radius: 100%;
         border: 2px solid transparent;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2); */
         transition: all ease-in-out .3s;
+        width: 100px;
+        height: 100px;
     }
+
 
     .foto-perfil__alterar {
         font-weight: 400;

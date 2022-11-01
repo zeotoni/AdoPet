@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/css/style-tablet.css">
     <link rel="stylesheet" href="./assets/css/style-desktop.css">
 </head>
-<body class="background" onload="exibeDadosPerfil()">
+<body class="background">
     <header>
         <div class="cabecalho__menu">
             <img src="./assets/img/Logo.svg" alt="Logo da adopet" class="logo-barra__menu">
@@ -32,9 +32,9 @@
                 <label for="foto">Foto</label>
                 <div class="input-foto">
                     <label id="label-foto__perfil">
-                        <input type="file" accept="image/*" data-input-foto required>
+                        <input type="file" accept="image/*" id="input-foto" required>
                         <figure class="personal-figure" data-container-img>
-                            <img  alt="Foto de perfil" class="foto-perfil"  data-img-perfil>
+                        <img  alt="Foto de perfil" class="foto-perfil"  id="img-perfil">
                         </figure>
                     </label>
                     <p class="foto-perfil__alterar">Clique na foto para alterar</p>
@@ -58,10 +58,13 @@
                 <button class="botao botao-mensagem" data-btn-info="btn-salvar-info">Salvar</button>
                 <p class="msg-sucesso" data-msg-sucess="msg-sucesso">Dados salvos com sucesso!</p>
             </form>
+            <div>
+                <img src="" alt="" id="foto">
+            </div>
         </section>
     </main>
     <footer class="rodape">
         <p>2022-Desenvolvido por Ezequiel Otoni.</p>
     </footer>
-    <script src="./js/perfil.js" ></script>
+    <script src="./js/input.js" ></script>
 </body>

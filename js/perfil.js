@@ -6,6 +6,8 @@ iconeMsg.addEventListener('click', () => {
     window.location.href = `mensagem.html?id=${id}`;
 })
 
+const inputImg = document.querySelector('[data-input-foto]')
+const imgPerfil = document.querySelector('[data-img-perfil]')
 const inputNome = document.querySelector('[data-nome]');
 const inputTelefone = document.querySelector('[data-tel]');
 const inputCidade = document.querySelector('[data-cidade]');
@@ -33,15 +35,39 @@ const exibeDadosPerfil = () =>{
             nome: response.infoPerfilSv.nome,
             cidade: response.infoPerfilSv.cidade,
             telefone: response.infoPerfilSv.telefone,
-            sobre: response.infoPerfilSv.sobre
+            sobre: response.infoPerfilSv.sobre,
+            imagem: response.infoPerfilSv.imagem
         }
         inputNome.value = infoPerfil.nome;
         inputTelefone.value = infoPerfil.telefone;
         inputCidade.value = infoPerfil.cidade;
-        inputSobre.value = infoPerfil.sobre
+        inputSobre.value = infoPerfil.sobre,
+        imgPerfil.src = infoPerfil.imagem
     })
     .catch(error => console.log(error))
 }
+
+let imgBase64 = '';
+
+inputImg.addEventListener('change', function() {
+    const imagem = inputImg.files;
+    
+    if(imagem.length > 0) {
+
+        const imagemSelecionada = imagem[0];
+
+        const lerArquivo = new FileReader();
+
+        lerArquivo.onload = function(e) {
+            imgBase64 = e.target.result;
+            imgPerfil.src = imgBase64;
+        }
+
+        lerArquivo.readAsDataURL(imagemSelecionada)
+        
+    }
+})
+
 
 btnSalvarInfo.addEventListener('click', (e) => {
     e.preventDefault();
@@ -50,7 +76,8 @@ btnSalvarInfo.addEventListener('click', (e) => {
             "nome": inputNome.value,
             "telefone": inputTelefone.value,
             "cidade": inputCidade.value,
-            "sobre": inputSobre.value
+            "sobre": inputSobre.value,
+            "imagem": imgBase64
           }
     }
     fetch(`https://arquivo-json-adopet.herokuapp.com/usuarios/${id}`, {
@@ -59,7 +86,7 @@ btnSalvarInfo.addEventListener('click', (e) => {
         body:  JSON.stringify(userInfo)
     })
     .then(response => {
-        if(response.status === 200 || response.status === 2001) {
+        if(response.status === 200 || response.status === 201) {
             msgSucess.setAttribute("style", "display: block")
         }
     })
