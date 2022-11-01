@@ -63,11 +63,9 @@ inputImg.addEventListener('change', function() {
         lerArquivo.onload = function(e) {
             imgBase64 = e.target.result;
             imgPerfil.src = imgBase64;
-            perfilHeader.src = imgBase64;
         }
 
         lerArquivo.readAsDataURL(imagemSelecionada)
-        
     }
 })
 
